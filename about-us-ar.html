@@ -17,55 +17,119 @@
         <script src="js/jquery.js"></script>
     </head>
     <body>
-    <header class="main-header">
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a class="navbar-brand" href="index-ar.html"><img src="img/logo.svg" class="logo" /></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <span class="navbar-toggler-icon"></span>
-            </button>
-              
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item ">
-                      <a class="nav-link" href="index-ar.html">الرئيسية</a>
-                    </li>
-                    <li class="nav-item active">
-                      <a class="nav-link" href="about-us-ar.html">عن الشركة</a>
-                    </li>
-                    
-
-                    <li class="nav-item dropdown" id="myDropdown">
-                        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">المنتجات التمويلية  </a>
-                        <ul class="dropdown-menu">
-                          <li> <a class="dropdown-item" href="#"> المنتجات التمويلية &raquo; </a>
-                            <ul class="submenu dropdown-menu">
-                              <li><a class="dropdown-item" href="#">سيارات جديدة</a></li>
-                              <li><a class="dropdown-item" href="#">سيارات مستعملة</a></li>
-                              <li><a class="dropdown-item" href="#">سيارات كهربائية </a></li>
-                            </ul>
-                          </li>
-                          <li><a class="dropdown-item" href="#"> التأمين على السيارات </a></li>
-                          <li><a class="dropdown-item" href="#"> صيانة السيارات </a></li>
-                          <li><a class="dropdown-item" href="#"> قطع غيار السيارات </a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">جميل جازيت</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link lang" href="#" style="margin-top: -4px; transform: rotate(90deg);"> <img src="img/search.svg" style="width: 20px !important; margin-right: 0px;" /></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link lang" href="about-us.html" style="margin-top: -2px;"> EN <img src="img/language.svg" /></a>
-                    </li>
-                </ul>
-                  
+<header class="main-header bg-header">
+            <div id="mySidenav" class="sidenav">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6">
+                            <div class="search">
+                                <input placeholder="ما الذي تبحث عنه؟"  type="text" value="" size="30" maxlength="128" class="txt-search wow slideInRight" data-wow-duration="2s" data-wow-offset="0" />
+                            <input type="submit" class="form-submit wow slideInLeft" value="" data-wow-duration="2s" data-wow-offset="0" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-        </nav>
-    </header>
+        
+            <nav class="container navbar navbar-expand-lg navbar-light">
+                <div class="">
+                    <a class="navbar-brand" href="index-ar.html"><img src="img/logo.svg" class="logo" /></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                          <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link lang" onclick="openNav()"> <img src="img/search.svg" style="width: 20px !important; margin-right: 0px;" /></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link lang" href="about-us.html"> En  <img src="img/language.svg" /></a>
+                            </li>
+                        </ul>
+    
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                              <a class="nav-link" href="index-ar.html">الرئيسية</a>
+                            </li>
+                            <li class="nav-item dropdown" id="myDropdown">
+                                <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  المنتجات التمويلية  </a>
+                                <ul class="dropdown-menu">
+                                  <li> <a class="dropdown-item" href="#">  السيارات  </a>
+                                    <ul class="submenu dropdown-menu">
+                                      <li><a class="dropdown-item" href="#">السيارات الجديدة</a></li>
+                                      <li><a class="dropdown-item" href="#">السيارات المستعملة</a></li>
+                                      <li><a class="dropdown-item" href="#">السيارات الفاخرة</a></li>
+                                      <li><a class="dropdown-item" href="#">السيارات الكهربائية</a></li>
+                                      <li><a class="dropdown-item" href="#">الموديلات القديمة</a></li>
+                                    </ul>
+                                  </li>
+                                  <li><a class="dropdown-item" href="#">الدراجات النارية</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">الدراجات النارية</a></li>
+                                        <li><a class="dropdown-item" href="#">السكوترات</a></li>
+                                        <li><a class="dropdown-item" href="#">الدراجات الكهربائية</a></li>
+                                        <li><a class="dropdown-item" href="#">عربات الجولف</a></li>
+                                        <li><a class="dropdown-item" href="#">عربات الشاطئ</a></li>
+                                    </ul>
+                                  </li>
+                                  <li><a class="dropdown-item" href="#">القوارب</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">القوارب</a></li>
+                                        <li><a class="dropdown-item" href="#">جت سكي</a></li>
+                                    </ul>
+                                  </li>
+                                  <li><a class="dropdown-item" href="#">الصيانة، قطع الغيار والإكسسوارات</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">السيارات</a></li>
+                                        <li><a class="dropdown-item" href="#">الدراجات النارية</a></li>
+                                        <li><a class="dropdown-item" href="#">القوارب</a></li>
+                                      </ul>
+                                  </li>
+                                  <li><a class="dropdown-item" href="#">التأمين</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">تأمين السيارات</a></li>
+                                        <li><a class="dropdown-item" href="#">تأمين الدراجات النارية</a></li>
+                                        <li><a class="dropdown-item" href="#">تأمين السكوترات</a></li>
+                                        <li><a class="dropdown-item" href="#">تأمين القوارب</a></li>
+                                      </ul>
+                                  </li>
+                                  <li><a class="dropdown-item" href="#">الأجهزة والإلكترونيات</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">الهواتف المحمولة والأجهزة اللوحية</a></li>
+                                        <li><a class="dropdown-item" href="#">أجهزة الكمبيوتر المحمولة</a></li>
+                                        <li><a class="dropdown-item" href="#">الأجهزة المنزلية</a></li>
+                                        <li><a class="dropdown-item" href="#">الأجهزة والبرامج الترفيهية</a></li>
+                                      </ul>
+                                  </li>
+                                  <li><a class="dropdown-item" href="#">الأثاث</a>
+                                    <ul class="submenu dropdown-menu">
+                                        <li><a class="dropdown-item" href="#">الأثاث الداخلي</a></li>
+                                        <li><a class="dropdown-item" href="#">الأثاث الخارجي</a></li>
+                                      </ul>
+                                  </li>
+                                </ul>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="offers-ar.html">العروض</a>
+                            </li>
+    
+                            <li class="nav-item">
+                              <a class="nav-link" href="about-us-ar.html">عن الشركة</a>
+                            </li>
+    
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact-ar.html">اتصل بنا</a>
+                            </li>
+                        </ul>
+                          
+                    </div>
+                </div>
+            </nav>
+</header>
 
-<section class="hero-section">
+<section class="hero-section" style="display: none;">
         <img src="img/banner_aboutus.jpg" class="hero-img" />
         <div>
         <div class="overlay-hero-section"></div>
@@ -79,10 +143,13 @@
         </div>
 </section>
 <section class="container about-1 wow fadeInUp" data-wow-delay=".5s">
-      
+    <br />
+    <br />
+    <br />
+    <br />
         <div class="row justify-content-center">
-            <div class="col-md-10">
-                <img src="img/ico.png"  class="ico"/>
+            <div class="col-md-12">
+                <img src="img/ico.png"  class="ico" style="height: auto !important; object-fit: contain;"/>
                 <h2>مرحبا بكم في شركة
                     جميل للتمويل - مصر</h2>
                 <p>شركـة جميل للتمويل - مصر هي إحدى الشركــات التـابعـة لشركة جميل للتمويل التي تتمتع بإرث عريق وجذور عميقة تعود إلى أكثر من 75 ً عاما. حيث تمكنت من إدارة مجموعـة من الأعمـال المتنوعة بكفاءة وبناء شبكة شراكات متينة وبنية تحتية قوية تمتد عبر مناطق عملها في الشرق الأوسط وشمال أفريقيا و أوروبا. ويتيح ذلك لشركة جميل للتمويل مصر فرصة عظيمة للاستفادة من الخبرات الواسعة والشاملة للشركة الأم في إدارة أعمالها في مصر</p>
@@ -172,7 +239,7 @@
                         <div class="content-box">
                             <div class="field--name-field-cta field--type-link field--label-hidden "><a href="/en/individuals/cash-financing-individuals">قدم الآن</a></div>
                         </div>
-                        <a class="link-all" href="#"></a>
+                        <a class="link-all" href="works-details-ar.html"></a>
                     </div>
                 </div>
                 <div class="item">
@@ -339,9 +406,17 @@
         <div class="box row">
         <div class="col-lg-4 col-md-4">
             <div class="qr-code ">
-                <img src="img/app-store.svg"    alt="image" />
-                <img src="img/play-store.svg"   alt="image" />
-            </div>
+                <div class="field--name-field-qr-code download-app">
+                    <div class="first-app">
+                        <img src="img/Jameel Finance_qrcode.svg"    alt="image" />
+                        تحميل تطبيق ايفون 
+                    </div>
+                    <div class="first-app">
+                        <img src="img/Jameel Finance_qrcode.svg"    alt="image" />
+                        تحميل تطبيق اندرويد
+                    </div>
+                </div>  
+        </div>
                 
             <div class="content-box">
                     <div class="field--download">
@@ -353,24 +428,11 @@
         </div>
         <div class="col-lg-1 col-md-1"></div>
         <div class="col-lg-7 col-md-7">
-                <div class="owl-carousel owl-theme owl-slider">
-                            <div class="item">
-                                <img src="img/apps/screen-001.png" />
-                            </div>
-                            <div class="item">
-                                <img src="img/apps/screen-002.png" />
-                            </div>
-                            <div class="item">
-                                <img src="img/apps/screen-003.png" />
-                            </div>
-                            <div class="item">
-                                <img src="img/apps/screen-004.png" />
-                            </div>
-                            <div class="item">
-                                <img src="img/apps/screen-005.png" />
-                            </div>
-                </div>
+            <video autoplay="autoplay" loop="loop" muted="muted" playsinline="playsinline" width="100%" height="100%">
+                <source src="img/mobile.mp4" type="video/mp4">
+              </video>
             </div>
+        </div>
         </div>
     </div>
 </section>
@@ -378,72 +440,75 @@
 <footer>
     <div class="container">
         <div class="row">
-            <div class="col-md-2">
-                <h2 class="title-h2">منتجات جميل</h2>
-                <ul class="list-1">
-                    <li><a href="#">سيارات جديدة</a></li>
-                    <li><a href="#">سيارات مستعملة</a></li>
-                    <li><a href="#">سيارات كهربائية</a></li>
-                    <li><a href="#">التأمين على السيارات</a></li>
-                    <li><a href="#">صيانة السيارات</a></li>
-                    <li><a href="#">قطع غيار السيارات</a></li>
+            <div class="col-md-3">
+                <h2 class="title-h2">سياسات المنتجات</h2>
+                <ul >
+                    <li><a href="schedule-of-charges-ar.html">جدول الرسوم</a></li>
+                    <li><a href="terms-and-condition-ar.html">شروط الاستخدام</a></li>
+                    <li><a href="#">سياسات الدفع</a></li>
                 </ul>
             </div>
-            <div class="col-md-2">
-                <h2 class="title-h2">روابط سريعه</h2>
-                <ul class="list-1">
-                    <li><a href="#">الرئيسية</a></li>
-                    <li><a href="#">عن الشركة</a></li>
-                    <li><a href="#">للتواصل معنا</a></li>
-                    <li><a href="#">جدول الرسوم</a></li>
-                    <li><a href="#">المقالات</a></li>
-                    <li><a href="#">الأسئلة الشائعة</a></li>
+            <div class="col-md-3">
+                <h2 class="title-h2">سياسات الموقع</h2>
+                <ul >
+                    <li><a href="copyrights-disclaimers-ar.html">حقوق الطبع والنشر وإخلاء المسؤولية</a></li>
+                    <li><a href="accessibility-policy-ar.html">سياسة إمكانية الوصول</a></li>
+                    <li><a href="cookies-policy-ar.html">سياسة ملفات تعريف الارتباط</a></li>
                 </ul>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <h2 class="title-h2">السياسات والدعم</h2>
-                <ul class="list-1">
-                    <li><a href="#">حقوق الطبع والنشر وإخلاء المسؤولية</a></li>
-                    <li><a href="#">الشروط والأحكام</a></li>
-                    <li><a href="#">شروط الاستخدام</a></li>
-                    <li><a href="#">سياسة الخصوصية</a></li>
-                    <li><a href="#">سياسة ملفات تعريف الارتباط</a></li>
-                    <li><a href="#">سياسة إمكانية الوصول</a></li>
+                <ul >
+                    <li><a href="about-us-ar.html">عن الشركة</a></li>
+                    <li><a href="contact-ar.html">اتصل بنا</a></li>
+                    <li><a href="faqs-ar.html">الأسئلة الشائعة</a></li>
                 </ul>
             </div>
             
-            <div class="col-md-4">
-                <img src="img/logo-color.svg" class="logo" />
-                <p>
-                    شركة جميل للتمويل – مصر هي إحدى الشركات التابعة لمجموعة جميل للتمويل والتي تتمتع بتاريخ طويل يمتد لأكثر من 75 عاماً، مما يجعلها فرصة كبيرة للاستفادة من الخبرة الواسعة والشاملة في إدارة أعمالها في مصر.
-                </p>
+            <div class="col-md-3 footer-logo">
+                <img src="img/logo-footer.svg" class="logo" />
             </div>
         </div>
 
         <div class="row footer-copyright">
-            <div class="col-md-6">
-                <p>
-                    © 2024 جميل للتمويل ش.م.م. يُمنح الإذن باستخدام هذا الموقع بشرط الالتزام الصارم بشروط الاستخدام.
-
-اسم جميل للتمويل وشعار جميل للتمويل والرسومات ذات الشكل الخماسي هي علامات تجارية أو مسجلة
-                </p>
-            </div>
-            <div class="col-md-3 middel">
+            <div class="col-md-5">
                 <p class="mail"><a href="tel:16158" ><img src="img/phone.svg" />  16158</a></p>
+                <p class="mail"><a href="whatsapp" ><img src="img/whatsapp.svg" /> دردش الآن </a></p>
                 <p class="mail"> <a href="mailto:info@aljfinance.com.eg"><img src="img/mail.svg" /> info@aljfinance.com.eg</a></p>
             </div>
-            <div class="col-md-3">
+            <div class="col-md-3 middel">
                 <div class="social-icons">
                     <ul>
                         <li><a href="https://www.facebook.com/aljfeg/"  target="_blank"><img src="img/facebook.svg" /></a></li>
                         <li><a href="https://www.linkedin.com/company/jameelfinance/"  target="_blank"><img src="img/youtube.svg" /></a></li>
                         <li><a href="https://www.instagram.com/aljfeg/"  target="_blank"><img src="img/instagram.svg" /></a></li>
                         <li><a href="https://www.linkedin.com/company/jameelfinance/"  target="_blank"><img src="img/linkedin.svg" /></a></li>
-                       
+                        <li><a href="https://www.tiktok.com/@aljfeg"><img src="img/tiktok.svg" /></a></li>
                     </ul>
                 </div>
             </div>
-        </div>      
+            <div class="col-md-4">
+                <div class="download-app">
+                    <div class="first-app">
+                        <img src="img/Jameel Finance_qrcode.svg" alt="download-app" style="width:84px ;height:84px ">
+                        <p>تحميل تطبيق ايفون</p>
+                    </div>
+                    <div class="first-app">
+                        <img src="img/Jameel Finance_qrcode.svg" alt="download-app" style="width:84px ;height:84px ">
+                        <p>تحميل تطبيق اندرويد</p>
+                    </div>
+            </div>
+        </div>
+    </div>   
+        
+        <div class="row footer-down">
+            <div class="col-md-12">
+                <p>
+                    © 2024 جميل للتمويل ش.م.م. يُمنح الإذن باستخدام هذا الموقع بشرط الالتزام الصارم بشروط الاستخدام.
+اسم جميل للتمويل وشعار جميل للتمويل والرسومات ذات الشكل الخماسي هي علامات تجارية أو مسجلة
+                </p>
+            </div>
+        </div>
     </div>
 </footer>
 </body>
@@ -518,11 +583,11 @@ $(document).ready(function() {
             nav:true
         },
         600:{
-            items:3,
+            items:1,
             nav:true
         },
         1000:{
-            items:3,
+            items:2,
             nav:true,
             loop:true
         }
@@ -605,7 +670,15 @@ $(document).ready(function() {
             // end if innerWidth
     
         }); 
-        // DOMContentLoaded  end
+function openNav() {
+  document.getElementById("mySidenav").style.height = "160px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.height = "0";
+}
 </script>
+   
 
 </html>

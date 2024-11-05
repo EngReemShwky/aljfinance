@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>News - Jameel</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+        <meta name="viewport"               content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi, viewport-fit=cover" />
+        <meta name="description"            content="application for aljfinance.com ">
+        <meta name="author"                 content="Eng: Reem Shwky , eng.reem.shwky@gmail.com">
+        <link rel="apple-touch-icon" sizes="180x180"     href="img/ico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32"  href="img/ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"  href="img/ico/favicon-16x16.png">
+        <link href="css/animate.css" 	    rel="stylesheet" />
+        <link href="css/bootstrap.css" 	    rel="stylesheet" />
+        <link href="css/owl.carousel.css" 	rel="stylesheet" />
+        <link href="css/demo-en.css" 	    rel="stylesheet" />
+        <script src="js/jquery.js"></script>
+    </head>
+<body>
+    <header class="main-header bg-header">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6" style="width: 400px;">
+                        <div class="search">
+                            <input placeholder="What are you looking for?"  type="text" value="" size="30" maxlength="128" class="txt-search wow slideInRight" data-wow-duration="2s" data-wow-offset="0" />
+                            <input type="submit" class="form-submit wow slideInLeft" value="" data-wow-duration="2s" data-wow-offset="0" />  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <nav class="container navbar navbar-expand-lg navbar-light">
+            <div class="">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.svg" class="logo" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link lang" href="index-ar.html"> <img src="img/language.svg" /> Ar </a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link lang" onclick="openNav()"> <img src="img/search.svg" style="width: 20px !important; margin-right: 0px;" /></a>
+                        </li>
+                    </ul>
+    
+                    <!-- SEARCH -->
+                    
+                     <!-- END SEARCH -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown" id="myDropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  Financing Products </a>
+                            <ul class="dropdown-menu">
+                              <li> <a class="dropdown-item" href="works.html"> Cars  </a>
+                                <ul class="submenu dropdown-menu">
+                                  <li><a class="dropdown-item" href="works-details.html">New</a></li>
+                                  <li><a class="dropdown-item" href="works-details-2.html">Used</a></li>
+                                  <li><a class="dropdown-item" href="works-details-3.html">Luxury</a></li>
+                                  <li><a class="dropdown-item" href="works-details-4.html">Electric</a></li>
+                                  <li><a class="dropdown-item" href="works-details-5.html">Old Models</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#"> Motorcycles </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="works-details-6.html">Motorbikes</a></li>
+                                    <li><a class="dropdown-item" href="works-details-7.html">Scooters</a></li>
+                                    <li><a class="dropdown-item" href="works-details-8.html">Electric</a></li>
+                                    <li><a class="dropdown-item" href="works-details-9.html">Golf Cars</a></li>
+                                    <li><a class="dropdown-item" href="works-details-10.html">Beach Buggies</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#"> Watercrafts </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="works-details-11.html">Boats</a></li>
+                                    <li><a class="dropdown-item" href="works-details-12.html">Jet Skies</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#"> Maintenance, Spare Parts & Accessories </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="works-details-13.html">Cars</a></li>
+                                    <li><a class="dropdown-item" href="works-details-14.html">Motorcycles</a></li>
+                                    <li><a class="dropdown-item" href="works-details-15.html">Watercrafts</a></li>
+                                </ul>
+                              </li>
+    
+                              <li><a class="dropdown-item" href="#">Insurance </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Cars</a></li>
+                                    <li><a class="dropdown-item" href="#">Motorbikes</a></li>
+                                    <li><a class="dropdown-item" href="#">Scooters</a></li>
+                                    <li><a class="dropdown-item" href="#">Boats</a></li>
+                                </ul>
+                              </li>
+    
+                              <li><a class="dropdown-item" href="#">Appliances & Electronics </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mobiles & Tablets</a></li>
+                                    <li><a class="dropdown-item" href="#">PCs & Laptops</a></li>
+                                    <li><a class="dropdown-item" href="#">Appliances</a></li>
+                                    <li><a class="dropdown-item" href="#">Gadgets & Gaming</a></li>
+                                </ul>
+                              </li>
+    
+                              <li><a class="dropdown-item" href="#">Furniture</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Indoor</a></li>
+                                    <li><a class="dropdown-item" href="#">Outdoor</a></li>
+                                </ul>
+                              </li>
+                              
+                            </ul>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="offers.html">Offers</a>
+                        </li>
+    
+                        <li class="nav-item">
+                          <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                      
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<section class="container about-1 wow fadeInUp" data-wow-delay=".5s">
+    <br />
+    <br />
+    <br />
+    <br />
+    <section>
+        <div class="container">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Terms of Use</li>
+            </ul>
+        </div>
+    </section>
+</section>
+
+
+<section class="container wow fadeInUp news-first" data-wow-delay=".5s">
+        <div class="row justify-content-center">
+            <div class="col-md-12 setting">
+                <h1>Terms of usage</h1>
+                <p>Please read these terms of use carefully before using this website. Access to and use of this website is governed strictly by these terms of use. If you do not agree with any of these terms you must immediately discontinue use of this website. Please note in particular the limitation of liability and exclusion of warranties clauses set out below.</p>
+                <br />
+
+                <h1>Terms of Website Use</h1>
+                <p>This website provides information about the company Abdul Latif Jameel Finance Egypt Company and its services.</p>
+                <p>This webpage (together with the documents referred to in it) informs you of the Terms of Use on which you may make use of Abdul Latif Jameel Finance Egypt website at the domain, ALJFinance.com.eg ( “Abdul Latif Jameel Finance Egypt Website”). Use of Abdul Latif Jameel Finance Egypt Website includes accessing, browsing, linking to or registering to use Abdul Latif Jameel Finance Egypt Website.</p>
+                <p>Abdul Latif Jameel Finance Egypt Website is a website owned and operated by Abdul Latif Jameel Finance Egypt Company S.A.E (an Egyptian joint stock company S.A.E – incorporated in accordance with the provisions of Law No. 18 of 2020 under the control of the Financial Regulatory Authority commercial register N0. 249730 the company’s headquarters located at 163 Sudan street, Mohandesein, Giza.</p>
+                <p>The Company has sole responsibility for the content included on  Abdul Latif Jameel Finance Egypt Website.</p>
+                <p>Please read these terms of use very carefully before you start to use Abdul Latif Jameel Finance Egypt Website, as these terms of use will apply to your use of and access to Abdul Latif Jameel Finance Egypt Website. It is recommended you print a copy of these terms of use for future reference.</p>
+                <p>Each time you use Abdul Latif Jameel Finance Egypt Website, you confirm you accept these terms of use and you agree to comply fully with them. If you do not agree to these terms of use, you must not use or access Abdul Latif Jameel Finance Egypt Website and must leave Abdul Latif Jameel Finance Egypt Website immediately.</p>
+                <p>These terms of use may be changed by us at any time by amending this page. Please check this webpage from time to time to note any changes made as they are binding on you once you access Abdul Latif Jameel Finance Egypt Website.</p>
+
+                <h1>Information about Abdul Latif Jameel Finance Egypt Company</h1>
+                <p>For any enquiries related to any particular entity mentioned on the Abdul Latif Jameel Finance Egypt Website or for any specific enquiries related to Abdul Latif Jameel Finance Egypt Company’s interests in vehicle financing, please email info@aljfinance.com.eg. </p>
+
+                <h1>Other Applicable Terms</h1>
+                <p>These terms of use refer to the following additional terms, which also apply to your use of Abdul Latif Jameel Finance Egypt Website and which, by using Abdul Latif Jameel Finance Egypt Website, you agree to comply with: </p>
+                <ol>
+                    <li>Privacy Policy (hyperlink), which sets out the terms on which any personal data collected (if any) from you, or which you provide, via Abdul Latif Jameel Finance Egypt Website is processed.</li>
+                    <li>Accessibility Policy (hyperlink), which sets out the availability of Abdul Latif Jameel Finance Egypt Website to users with special needs.</li>
+                    <li>Cookie Policy (hyperlink), which sets out information about the use of cookies on Abdul Latif Jameel Finance Egypt Website.</li>
+                </ol>
+
+                <h1>Accessing and Using Abdul Latif Jameel Finance Egypt Website</h1>
+                <p>It is not guaranteed that Abdul Latif Jameel Finance Egypt Website, or any content on it, will always be available or be uninterrupted. Access to Abdul Latif Jameel Finance Egypt Website is permitted on a temporary “as is” basis. All or any part of Abdul Latif Jameel Finance Egypt Website, without notice, may be suspended, withdrawn, discontinued or changed. Abdul Latif Jameel Finance Egypt Company will not be liable to you if for any reason Abdul Latif Jameel Finance Egypt Website is unavailable (temporarily or permanently) at any time or for any period.</p>
+                <p>You are responsible to make all necessary arrangements for you to have access to Abdul Latif Jameel Finance Egypt Website. You are also responsible for ensuring that all persons who access Abdul Latif Jameel Finance Egypt Website through your Internet connection are made fully aware of these terms of use and other applicable terms and conditions, and that they fully comply with them.</p>
+                <p>You may use Abdul Latif Jameel Finance Egypt Website only for lawful purposes. You acknowledge and agree you may not use Abdul Latif Jameel Finance Egypt Website: </p>
+                <ol>
+                    <li>In any way that breaches any applicable local, national or international law or regulation.</li>
+                    <li>In any way that is unlawful or fraudulent, or has any unlawful or fraudulent purpose or effect.</li>
+                    <li>For the purpose of harming or attempting to harm minors in any way.</li>
+                    <li>To send, knowingly receive, upload, download, use or re-use any material which does not comply with the Content Standards (see below).</li>
+                    <li>To post advertisements or to promote third party websites.</li>
+                    <li>To transmit, or procure the sending of, any unsolicited or unauthorised advertising or promotional material or any other form of similar solicitation (spam).</li>
+                    <li>To transmit any data, send or upload any material that contains viruses, Trojan horses, worms, time-bombs, keystroke loggers, spyware, adware or any other harmful programs or similar computer code designed to adversely affect the operation of any computer software or hardware.</li>
+                </ol>
+                <p>You also acknowledge and agree: </p>
+                <ol>
+                    <li>Not to reproduce, duplicate, copy or re-sell any part of Abdul Latif Jameel Finance Egypt Website in contravention of the provisions of these terms of website use.</li>
+                    <li>Not to direct web traffic away from Abdul Latif Jameel Finance Egypt Website.</li>
+                    <li>Not to access without authority, interfere with, damage or disrupt: 
+                        <ol>
+                            <li>any part of Abdul Latif Jameel Finance Egypt Website;</li>
+                            <li>any equipment (including any server) or network on which Abdul Latif Jameel Finance Egypt Website is stored;</li>
+                            <li>any software used in the provision of Abdul Latif Jameel Finance Egypt Website;</li>
+                            <li>any server, computer or database connected to Abdul Latif Jameel Finance Egypt Website; or</li>
+                            <li>any equipment or network or software owned or used by any third party.</li>
+                        </ol>
+                    </li>
+                    <li>Not to misuse Abdul Latif Jameel Finance Egypt Website by knowingly introducing viruses, Trojans, worms, logic bombs or other material which is malicious or technologically harmful.</li>
+                    <li>Not to attack Abdul Latif Jameel Finance Egypt Website via a denial-of-service attack or a distributed denial-of-service attack. By breaching this provision, you would commit a criminal offence, e.g. the Anti-Cybercrime Act of Egypt No. 175 for 2018. Abdul Latif Jameel Finance Egypt Company may report any such breach to the relevant law enforcement authorities and will co-operate with those authorities by disclosing your identity to them. In the event of such a breach, your right to use Abdul Latif Jameel Finance Egypt Website may be ceased immediately.</li>
+                    <li>Not to disguise or interfere in any way with the IP address of the computer you are using to access Abdul Latif Jameel Finance Egypt Website or otherwise take steps to prevent the identification of the actual IP address of the computer you are using whilst accessing Abdul Latif Jameel Finance Egypt Website.</li>
+                </ol>
+                <p>Abdul Latif Jameel Finance Egypt Company does not guarantee that Abdul Latif Jameel Finance Egypt Website will be secure or free from bugs, viruses or other technologically harmful material. You are responsible for configuring your information technology, computer programmes, software and platform in order to access Abdul Latif Jameel Finance Egypt Website in a manner you deem appropriate and secure. You should use your own virus protection software.</p>
+
+                <h1>Security</h1>
+                <p>Internet transmissions are never completely private or secure and there is a risk, therefore, that any message or information sent via Abdul Latif Jameel Finance Egypt Website should be treated as non-confidential and may be intercepted and potentially read by others. Abdul Latif Jameel Finance Egypt Company will have no liability to you in respect of any transmissions you send to it and you do so entirely at your own risk.</p>
+
+                <h1>Intellectual Property Rights and Using the Content of Abdul Latif Jameel Finance Egypt Website</h1>
+                <p>The Company is the owner or the licensee of Abdul Latif Jameel Finance Egypt Website, all content of Abdul Latif Jameel Finance Egypt Website, all the material published on Abdul Latif Jameel Finance Egypt Website, any Abdul Latif Jameel Finance Egypt Company newsletter, updates, eshots and emails and any Abdul Latif Jameel Finance Egypt Company social media or informational updates and/or postings (“Content”), and all intellectual property rights in the Content. The Content is protected by copyright laws and treaties around the world. All such rights are fully reserved by the Company.</p>
+                <p>Abdul Latif Jameel businesses own rights throughout the world in various trade marks (registered and unregistered), service marks, graphics, logos, designs, page headers, button icons, scripts and service names (“ALJ Trade Marks”)</p>
+                <p>Any unauthorised use of any of the ALJ Trade Marks will constitute a violation of the Abdul Latif Jameel businesses’ rights in the ALJ Trade Marks.</p>
+                <p>Your use of Abdul Latif Jameel Finance Egypt Website grants you no right or licence to reproduce or otherwise use any ALJ Trade Marks or third party trademarks. Any copying or downloading of any Content will not transfer title to that Content to you nor grant you any licence to use that Content for non-personal purposes. You must not use any part of the Content for non-personal purposes, such as commercial purposes, without obtaining a prior written licence to do so from the Company, which will be granted in the Company’s absolute discretion.</p>
+                <p>You must not exploit the whole or part of any Content without the Company’s prior written permission (to be determined in its absolute discretion) including (but not limited to): </p>
+                <ol>
+                    <li>you must not modify copies of any Content you have printed off or downloaded in any way;</li>
+                    <li>you must not use any illustrations, photographs, video or audio sequences or any graphics separately from any accompanying text;</li>
+                    <li>you must not remove any copyright or other proprietary notices from copied or downloaded Content;</li>
+                    <li>you must not use the Content in any way which is fraudulent or unlawful;</li>
+                    <li>you must not rely on the Content as being entirely accurate, complete or up to date; and/or</li>
+                    <li>you must not use the Content in a manner which does not comply fully with these terms of use.</li>
+                </ol>
+                <p>If you print off, copy, download, modify or link any part of the Content available via Abdul Latif Jameel Finance Egypt Website in breach of these terms of use, your right to use Abdul Latif Jameel Finance Egypt Website may be ceased immediately and you must, at the Company’s option, return or destroy any copies (electronic or otherwise) of the materials you have made.</p>
+
+                <h1>Links</h1>
+                <p>Where Abdul Latif Jameel Finance Egypt Website contains links to other sites and resources provided by third parties, these links are provided for your information only. The Company has, unless explicitly indicated otherwise, no control over the content of those sites or resources and has no rights in the content of those sites or in the resources. The Company assumes no responsibility for the content of websites linked on Abdul Latif Jameel Finance Egypt Website. Such links should not be interpreted as endorsement by Abdul Latif Jameel Finance Egypt Company of those linked websites.</p>
+                <p>You must not link to Abdul Latif Jameel Finance Egypt Website home page without the Company’s prior written permission to be determined in its absolute discretion. Abdul Latif Jameel Finance Egypt Website must not be framed on any other site.</p>
+                <p>In the event you are granted prior written permission to link to Abdul Latif Jameel Finance Egypt Website home page, you must: </p>
+                <ol>
+                    <li>only link to Abdul Latif Jameel Finance Egypt Website home page;</li>
+                    <li>only link in a way that is fair and legal and does not damage the Company’s and/or Abdul Latif Jameel Finance Egypt Company’s reputation nor takes advantage of that reputation;</li>
+                    <li>not establish a link in such a way as to suggest any form of association, approval or endorsement on the part of Abdul Latif Jameel Finance Egypt Company where none exists;</li>
+                    <li>not establish a link to Abdul Latif Jameel Finance Egypt Website in any website not owned by you; and</li>
+                    <li>ensure the website in which you are linking must comply in all respects with the Content Standards (see below).</li>
+                </ol>
+                <p>The Company reserves the right to withdraw linking permission without notice.</p>
+
+                <h1>Interactive Services</h1>
+                <p>From time to time, informational updates and other interactive services may be provided on the Abdul Latif Jameel Finance Egypt Website (“Interactive Services” or “Platform”). The Platform will provide information about the goods and services provided by the Company. The Platform is operated, controlled and moderated by the Abdul Latif Jameel Finance Egypt Company. Abdul Latif Jameel Finance Egypt Company does not review and approve content included within the Platform prior to such content going live. Abdul Latif Jameel Finance Egypt Company does not actively monitor and will not censor content, except in circumstances detailed in the Content Standards (see below).</p>
+                <p>Where another Interactive Service is provided, clear information will be provided about the kind of service offered, if it is moderated and what form of moderation is used (including whether it is human or technical).</p>
+                <p>There is no obligation to oversee, monitor or moderate any Interactive Service and liability for any loss or damage arising from the use of any Interactive Service by a user in contravention of the Content Standards (see below) is expressly excluded, whether the Interactive Service is moderated or not. </p>
+                <p>However, attempts will be made to assess possible risks for users (and in particular, for children) from third parties when they use any Interactive Service. Also, it will be decided in each case whether it is appropriate to use moderation of the relevant service (including what kind of moderation to use) in the light of those risks.</p>
+                <p>The use of any of the Interactive Services by a minor is subject to the consent of their parent or guardian. Parents are advised that it is important they communicate with their children about their safety online, as moderation is not fool-proof. Minors who are using any Interactive Service should be made aware of the potential risks to them. Please refer to the terms below which address use of Abdul Latif Jameel Finance Egypt Website by children.</p>
+
+                <h1>Content Standards</h1>
+                <p>The content standards below (“Content Standards”) apply to any and all material which you contribute to Abdul Latif Jameel Finance Egypt Website (“Contribution”), and to any Interactive Services associated with it. You must comply with the spirit and the letter of the Content Standards. The Content Standards apply to each part of any Contribution as well as to its whole.</p>
+                <h3>Contributions must: </h3>
+                <ul>
+                    <li>Be accurate (where they state facts).</li>
+                    <li>Be genuinely held (where they state opinions).</li>
+                    <li>Comply with applicable law in the England and in any country from which they are posted.</li>
+                </ul>
+
+                <h3>Contributions must: </h3>
+                <ul>
+                    <li>Contain any material which is defamatory of any person.</li>
+                    <li>Contain any material which is obscene, offensive, hateful or inflammatory.</li>
+                    <li>Contain profanity or other material which would upset or offend others.</li>
+                    <li>Promote sexually explicit material.</li>
+                    <li>Promote violence.</li>
+                    <li>Promote discrimination based on race, sex, culture, religion, nationality, disability, sexual orientation or age.</li>
+                    <li>Infringe any copyright, database right, trade mark or other intellectual property right of any other person.</li>
+                    <li>Be likely to deceive any person.</li>
+                    <li>Be made in breach of any legal duty owed to a third party, such as a contractual duty or a duty of confidence.</li>
+                    <li>Promote any illegal activity.</li>
+                    <li>Be threatening, abuse or invade another’s privacy, or cause annoyance, inconvenience or needless anxiety.</li>
+                    <li>Be likely to harass, upset, embarrass, alarm or annoy any other person.</li>
+                    <li>Be used to impersonate any person, or to misrepresent your identity or affiliation with any person.</li>
+                    <li>Give the impression that they emanate from or are endorsed by Abdul Latif Jameel Finance Egypt Company or any of its members, if this is not the case.</li>
+                    <li>Advocate, promote or assist any unlawful act such as (by way of example only) copyright infringement or computer misuse.</li>
+                    <li>Engage in spam, malware, phishing or what may constitute spamming based on the latest tricks or tactics of spammers.</li>
+                </ul>
+                <h1><strong>Suspension and Termination</strong></h1>
+<p>
+    The Company will determine, in its discretion, whether there has been a breach of these terms of use through your use of the Abdul Latif Jameel Finance Egypt Website. When a breach of these terms of use has occurred, the Company may take such action as it deems appropriate. Failure to comply with the Content Standards constitutes a material breach of these terms of use upon which you are permitted to use the Abdul Latif Jameel Finance Egypt Website.</p>
+    <ul>
+        <li>Immediate, temporary or permanent suspension and/or withdrawal of your right to use the Abdul Latif Jameel Finance Egypt Website.</li>
+        <li>Immediate, temporary or permanent removal of any posting or material uploaded by you to Abdul Latif Jameel Finance Egypt Website.</li>
+        <li>Issue of a warning to you.</li>
+        <li>Legal proceedings against you for reimbursement of all costs on an indemnity basis (including, but not limited to, reasonable administrative and legal costs) resulting from the breach.</li>
+        <li>Further legal action against you.</li>
+        <li>Disclosure of such information to law enforcement authorities.</li>
+    </ul>
+    <p>
+        All liability is excluded for actions taken by the Company, and/or any Abdul Latif Jameel Finance Egypt Company business, in response to breaches of these terms of use. The responses described in this policy are not limited, and other actions may be taken by Abdul Latif Jameel Finance Egypt Company. To report any alleged violation of the Content Standards, please contact us on <a href="mailto:info@aljfinance.com.eg">info@aljfinance.com.eg</a> </p>
+
+    <h1>No Reliance on Information</h1>
+    <p>Abdul Latif Jameel Finance Egypt Website provides brief information and an overview about Abdul Latif Jameel Finance Egypt Company. Abdul Latif Jameel Finance Egypt Website provides no information which can be used for investment and/or transactional decisions. The Content is provided for information only and is of a general and approximate nature and it is not intended to amount to, nor is, information or advice on which you should rely. In particular the Content does not constitute professional, financial or investment advice. Professional or specialist advice should be obtained before taking, or refraining from, any action on the basis of the Content.</p>
+<p>In providing information about Abdul Latif Jameel Finance Egypt Company, the Company is not acting, nor is it seeking to act, as a broker or dealer in respect of any securities of any companies or the information concerning such companies.</p>
+<p>It is not guaranteed that Abdul Latif Jameel Finance Egypt Website, or any content on it, will be free from errors, inaccuracies or omissions. It is your responsibility to check any Content is accurate and/or complete.</p>
+<p>Abdul Latif Jameel Finance Egypt Website may be updated from time to time, and may change the Content at any time. Although the Company makes reasonable efforts to update the information on Abdul Latif Jameel Finance Egypt Website, it makes no representations, warranties or guarantees, whether express or implied, that the Content is accurate, complete or up-to-date. Please note the Company is under no obligation to update the Content.</p>
+
+    <h1>Local Regulatory Restrictions</h1>
+    <p>Abdul Latif Jameel Finance Egypt Website is not directed at any person in any jurisdiction where (by reason of nationality, residence or otherwise) the access to or availability of  Abdul Latif Jameel Finance Egypt Website is prohibited or which would be subject to any restriction, including registration or other requirements within such jurisdiction. The Company reserves the right to limit access to Abdul Latif Jameel Finance Egypt Website to any such persons. Persons who access  Abdul Latif Jameel Finance Egypt Website do so on their own initiative and are responsible for compliance with applicable local laws and regulations. If in doubt, you should seek independent legal advice.</p>
+    
+    <h1>Limitation of our Library </h1>
+    <p>nothing in these terms of use excludes or limits the company liability for death or personal injury arising from negligence, or fraud or fraudulent misrepresentation, or any other liability that cannot be excluded or limited by egyptian law.</p>
+    <p>the company will be liable to any user for any loss or damage, whether in contract, tort (including negligence), breach of statutory duty, or otherwise, even if foreseeable, arising under or in connection with: </p>
+    <ul>
+        <li>use of, or inability to use, Abdul Latif Jameel Finance Egypt website;</li>
+        <li>use of or reliance on any content displayed on, or material provided via, Abdul Latif Jameel Finance Egypt website;</li>
+        <li>use of or reliance on any content displayed on, or material provided via, websites linked to Abdul Latif Jameel Finance Egypt website including without limitation the content;</li>
+        <li>loss or damage caused by a virus, distributed denial-of-service attack, or other technologically harmful material that may infect your computer equipment, computer programs, data or other proprietary material due to your use of the Abdul Latif Jameel Finance Egypt website or any website linked to it, or to your downloading of any content or material on it, or on any website linked to it; or</li>
+    </ul>
+
+    <p>if you are a business user, please note Abdul Latif Jameel Finance Egypt website is provided for personal use only and in addition the company also will not be liable for: </p>
+    <ul>
+        <li>loss of profits, sales, business, or revenue;</li>
+        <li>business interruption;</li>
+        <li>loss of data;</li>
+        <li>loss of anticipated savings;</li>
+        <li>loss of business opportunity, goodwill or reputation; or</li>
+        <li>any indirect or consequential loss or damage.</li>
+    </ul>
+
+    <h1>No Warranties </h1>
+    <p>Abdul Latif Jameel Finance Egypt website is provided “as is” and no warranties of any kind are given express or implied in respect of the alj website, all content of Abdul Latif Jameel Finance Egypt website and in the material published on Abdul Latif Jameel Finance Egypt website, including without limitation the content. specifically, without limitation, the company does not warrant that: </p>
+    <ul>
+        <li>you will be able to use Abdul Latif Jameel Finance Egypt website or that it will continue to be made available in its current or any other form;</li>
+        <li>the content on Abdul Latif Jameel Finance Egypt website or the material available via Abdul Latif Jameel Finance Egypt website, including without limitation the content, is accurate, complete or up-to-date</li>
+        <li>abdul latif jameel finance egypt website or any software or material of whatsoever nature available on or downloaded from it will be free from viruses or defects, compatible with your equipment or fit for any purpose.</li>
+    </ul>
+<p>except as expressly set out in these terms of use, all warranties, conditions and representations expressed or implied by statute, common law or otherwise (including, without limitation, warranties as to satisfactory quality, fitness for purpose or skill and care) are hereby excluded to the fullest extent permitted by law.</p>
+<h1>Indemnity</h1>
+<p>you agree to indemnify the company or company’s members, officers, directors and employees, immediately on demand, against all claims, liability, damages, costs and expenses, including legal fees, arising out of any breach of these terms of use by you or any other liabilities arising out of your use of the Abdul Latif Jameel finance Egypt website.</p>
+<h1>Children aged under 18</h1>
+<p>If you are under 18, you must ask your parent or a guardian before you: </p>
+<ul>
+    <li>email the Abdul Latif Jameel Finance Egypt Website or submit an enquiry</li>
+    <li>make a Contribution</li>
+    <li>ask Abdul Latif Jameel Finance Egypt Company to email anything to you; or</li>
+    <li>send any information to the Abdul Latif Jameel Finance Egypt Company.</li>
+</ul>
+<p>By continuing to use the Abdul Latif Jameel Finance Egypt Website and any of the services offered by it, you are confirming you have received the informed consent of your parent or a legal guardian.</p>
+<h1>Variation</h1>
+<p>No variation of these terms of use by you shall be effective unless it is in writing and signed by both the parties.</p>
+
+<h1>Severability</h1>
+<p>If any competent legal authority determines any part of these terms of use is illegal or unenforceable, then such part will be eliminated and the remaining terms of use will remain in force and effect and continue to apply to your use of the Abdul Latif Jameel Finance Egypt Website.</p>
+
+<h1>Applicable law</h1>
+<p>These terms of use, its subject matter and its formation (and any non-contractual disputes or claims) are governed by Egyptian law. Abdul Latif Jameel Finance Egypt Company and you both agree the courts of Egypt have exclusive jurisdiction of to settle any dispute, controversy or claim arising from or connected with these terms of use.</p>
+<h3>Contact Us</h3>
+<p>To contact us, please email&nbsp;<a href="mailto:info@aljfinance.com.eg">info@aljfinance.com.eg</a>&nbsp;or use the enquiry form available on Abdul Latif Jameel Finance Egypt Website.</p>
+   
+</div>
+</div>
+        
+        <br/>   
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h2 class="title-h2">Products Policies</h2>
+                <ul>
+                    <li><a href="schedule-of-charges.html">Schedule of charges</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Payments Methods</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2 class="title-h2">Website Policies</h2>
+                <ul>
+                    <li><a href="copyrights-disclaimers.html">Copyrights & Disclaimers</a></li>
+                    <li><a href="#">Terms of usage</a></li>
+                    <li><a href="cookies-policy.html">Privacy , Cookies & Accessibility Policies</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2 class="title-h2">Support & Info</h2>
+                <ul>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-3 footer-logo">
+                <img src="img/logo-footer.svg" class="logo" />
+                
+            </div>
+        </div>
+
+        <div class="row footer-copyright">
+            <div class="col-md-5">
+                <p class="mail"><a href="tel:16158" ><img src="img/phone.svg" />  16158</a></p>
+                <p class="mail"><a href="whatsapp" ><img src="img/whatsapp.svg" />  Chat Now</a></p>
+                <p class="mail"> <a href="mailto:info@aljfinance.com.eg"><img src="img/mail.svg" /> info@aljfinance.com.eg</a></p>
+            </div>
+            <div class="col-md-3 middel">
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="https://www.facebook.com/aljfeg/"  target="_blank"><img src="img/facebook.svg" /></a></li>
+                        <li><a href="https://www.linkedin.com/company/jameelfinance/"  target="_blank"><img src="img/youtube.svg" /></a></li>
+                        <li><a href="https://www.instagram.com/aljfeg/"  target="_blank"><img src="img/instagram.svg" /></a></li>
+                        <li><a href="https://www.linkedin.com/company/jameelfinance/"  target="_blank"><img src="img/linkedin.svg" /></a></li>
+                        <li><a href="https://www.tiktok.com/@aljfeg"><img src="img/tiktok.svg" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="download-app">
+                <div class="first-app">
+                    <img src="img/Jameel Finance_qrcode.svg" alt="download-app" style="width:84px ;height:84px ">
+                    <p>Download IOS</p>
+                </div>
+                <div class="first-app">
+                    <img src="img/Jameel Finance_qrcode.svg" alt="download-app" style="width:84px ;height:84px ">
+                    <p>Download ANDROID</p>
+                </div>
+            </div>
+               
+            </div>
+        </div>
+        <div class="row footer-down">
+            <div class="col-md-12">
+                <p>
+                    © 2024 Jameel Finance S.A.E. permission to use this site is granted strictly subject to the Terms of Use.
+                    The Abdul Latif Jameel name and the Abdul Latif Jameel logotype and pentagon-shaped graphics are trademarks or registered
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+<script src="js/wow.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script>
+$(document).ready(function() {
+    $('.owl-about').owlCarousel({
+        margin: 0,
+        loop: true,
+        nav: false,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true,
+        rtl:true,
+        responsive:{
+        0:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:4,
+            nav:true
+        },
+        1000:{
+            items:4,
+            nav:true,
+            loop:true
+        }
+    }
+    });
+
+     $('.owl-slider').owlCarousel({
+        margin:0,
+        loop: true,
+        nav: false,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        responsive:{
+        0:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:5,
+            nav:true
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:true
+        }
+    }
+    });
+
+    $('.owl-services').owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:true
+        },
+        1000:{
+            items:2,
+            nav:true,
+            loop:true
+        }
+    }
+    });
+
+    $('.owl-banks').owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        responsive:{
+        0:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:5,
+            nav:true
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:true
+        }
+    }
+    });
+
+    new WOW().init();
+});
+    
+document.addEventListener("DOMContentLoaded", function(){
+            
+    
+            /////// Prevent closing from click inside dropdown
+        document.querySelectorAll('.dropdown-menu').forEach(function(element){
+            element.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+        })
+            if (window.innerWidth < 992) {
+    
+                // close all inner dropdowns when parent is closed
+                document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+                    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+                        // after dropdown is hidden, then find all submenus
+                          this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+                              // hide every submenu as well
+                              everysubmenu.style.display = 'none';
+                          });
+                    })
+                });
+                
+                document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+                    element.addEventListener('click', function (e) {
+            
+                          let nextEl = this.nextElementSibling;
+                          if(nextEl && nextEl.classList.contains('submenu')) {	
+                              // prevent opening link if link needs to open dropdown
+                              e.preventDefault();
+                              console.log(nextEl);
+                              if(nextEl.style.display == 'block'){
+                                  nextEl.style.display = 'none';
+                              } else {
+                                  nextEl.style.display = 'block';
+                              }
+    
+                          }
+                    });
+                })
+            }
+}); 
+function openNav() {
+  document.getElementById("mySidenav").style.height = "160px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.height = "0";
+}
+</script>
+   
+
+</html>

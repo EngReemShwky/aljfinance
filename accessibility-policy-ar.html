@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>News - Jameel</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+        <meta name="viewport"               content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi, viewport-fit=cover" />
+        <meta name="description"            content="application for aljfinance.com ">
+        <meta name="author"                 content="Eng: Reem Shwky , eng.reem.shwky@gmail.com">
+        <link rel="apple-touch-icon" sizes="180x180"     href="img/ico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32"  href="img/ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"  href="img/ico/favicon-16x16.png">
+        <link href="css/animate.css" 	    rel="stylesheet" />
+        <link href="css/bootstrap.css" 	    rel="stylesheet" />
+        <link href="css/owl.carousel.css" 	rel="stylesheet" />
+        <link href="css/demo-en.css" 	    rel="stylesheet" />
+        <script src="js/jquery.js"></script>
+    </head>
+<body>
+<header class="main-header bg-header">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6">
+                        <div class="search">
+                            <input placeholder="ما الذي تبحث عنه؟"  type="text" value="" size="30" maxlength="128" class="txt-search wow slideInRight" data-wow-duration="2s" data-wow-offset="0" />
+                        <input type="submit" class="form-submit wow slideInLeft" value="" data-wow-duration="2s" data-wow-offset="0" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <nav class="container navbar navbar-expand-lg navbar-light">
+            <div class="">
+                <a class="navbar-brand" href="index-ar.html"><img src="img/logo.svg" class="logo" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link lang" onclick="openNav()"> <img src="img/search.svg" style="width: 20px !important; margin-right: 0px;" /></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link lang" href="register.html"> En  <img src="img/language.svg" /></a>
+                        </li>
+                    </ul>
+
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index-ar.html">الرئيسية</a>
+                        </li>
+                        <li class="nav-item dropdown" id="myDropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  المنتجات التمويلية  </a>
+                            <ul class="dropdown-menu">
+                              <li> <a class="dropdown-item" href="#">  السيارات  </a>
+                                <ul class="submenu dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">السيارات الجديدة</a></li>
+                                  <li><a class="dropdown-item" href="#">السيارات المستعملة</a></li>
+                                  <li><a class="dropdown-item" href="#">السيارات الفاخرة</a></li>
+                                  <li><a class="dropdown-item" href="#">السيارات الكهربائية</a></li>
+                                  <li><a class="dropdown-item" href="#">الموديلات القديمة</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">الدراجات النارية</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">الدراجات النارية</a></li>
+                                    <li><a class="dropdown-item" href="#">السكوترات</a></li>
+                                    <li><a class="dropdown-item" href="#">الدراجات الكهربائية</a></li>
+                                    <li><a class="dropdown-item" href="#">عربات الجولف</a></li>
+                                    <li><a class="dropdown-item" href="#">عربات الشاطئ</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">القوارب</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">القوارب</a></li>
+                                    <li><a class="dropdown-item" href="#">جت سكي</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">الصيانة، قطع الغيار والإكسسوارات</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">السيارات</a></li>
+                                    <li><a class="dropdown-item" href="#">الدراجات النارية</a></li>
+                                    <li><a class="dropdown-item" href="#">القوارب</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">التأمين</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">تأمين السيارات</a></li>
+                                    <li><a class="dropdown-item" href="#">تأمين الدراجات النارية</a></li>
+                                    <li><a class="dropdown-item" href="#">تأمين السكوترات</a></li>
+                                    <li><a class="dropdown-item" href="#">تأمين القوارب</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">الأجهزة والإلكترونيات</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">الهواتف المحمولة والأجهزة اللوحية</a></li>
+                                    <li><a class="dropdown-item" href="#">أجهزة الكمبيوتر المحمولة</a></li>
+                                    <li><a class="dropdown-item" href="#">الأجهزة المنزلية</a></li>
+                                    <li><a class="dropdown-item" href="#">الأجهزة والبرامج الترفيهية</a></li>
+                                  </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#">الأثاث</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">الأثاث الداخلي</a></li>
+                                    <li><a class="dropdown-item" href="#">الأثاث الخارجي</a></li>
+                                  </ul>
+                              </li>
+                            </ul>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="offers-ar.html">العروض</a>
+                        </li>
+
+                        <li class="nav-item">
+                          <a class="nav-link" href="about-us-ar.html">عن الشركة</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact-ar.html">اتصل بنا</a>
+                        </li>
+                    </ul>
+                      
+                </div>
+            </div>
+        </nav>
+</header>
+
+<section class="container about-1 wow fadeInUp" data-wow-delay=".5s">
+    <br />
+    <br />
+    <br />
+    <br />
+    <section>
+        <div class="container">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index-ar.html">الرئيسية</a></li>
+                <li class="breadcrumb-item active" aria-current="page">حقوق الطبع والنشر وإخلاء المسؤولية</li>
+            </ul>
+        </div>
+    </section>
+</section>
+
+
+<section class="container wow fadeInUp news-first" data-wow-delay=".5s">
+    <div class="row justify-content-center item">
+        <div class="col-md-12 setting">
+            <h2>سياسة إمكانية الوصول</h2>
+<p>توضح سياسة إمكانية الوصول هذه المعلومات التي توضح مدى توفر موقع شركة عبد اللطيف جميل للتمويل مصر على النطاق ALJFinance.com ("موقع عبد اللطيف جميل للتمويل مصر") للمستخدمين ذوي الاحتياجات المختلفة. وتغطي سياسة إمكانية الوصول هذه أهداف شركة عبد اللطيف جميل للتمويل مصر ونهجها في إمكانية الوصول، والوظائف الأساسية التي يجب أن يكون مستخدم موقع عبد اللطيف جميل للتمويل مصر قادرًا على القيام بها وما تقوم به شركة عبد اللطيف جميل للتمويل مصر عمليًا لتحسين إمكانية الوصول إلى موقع عبد اللطيف جميل للتمويل مصر.</p>
+<p>&nbsp;</p>
+
+<h3><strong>مقدمة</strong></h3>
+<p>تدرك شركة عبد اللطيف جميل للتمويل مصر أن أشكال الإعاقة المختلفة تؤثر على الوصول إلى موقع عبد اللطيف جميل للتمويل مصر الإلكتروني. وقد تم تبني نهج استباقي لتحسين موقع عبد اللطيف جميل للتمويل مصر الإلكتروني والخدمات المقدمة عبر موقع عبد اللطيف جميل للتمويل مصر الإلكتروني. تهدف شركة عبد اللطيف جميل للتمويل مصر الإلكتروني إلى تلبية احتياجات المستخدمين ذوي الإعاقة وتقديم معلومات وخدمات يمكن الوصول إليها بسهولة. تسعى شركة عبد اللطيف جميل للتمويل مصر إلى التحرك نحو الامتثال لمعايير إرشادات إمكانية الوصول إلى محتوى الويب (WCAG) 1.0 AA التابعة لاتحاد شبكة الويب العالمية (W3C). تسعى شركة عبد اللطيف جميل للتمويل مصر إلى توفير تجربة جيدة لمستخدمي موقع عبد اللطيف جميل للتمويل مصر من ذوي الاحتياجات الخاصة.</p>
+<h3><strong>النهج</strong></h3>
+<p>يتمثل نهج شركة عبد اللطيف جميل للتمويل مصر في إمكانية الوصول في محاولة جعل موقع عبد اللطيف جميل للتمويل مصر وخدماته سهلة الاستخدام والفهم لجميع المستخدمين، بما في ذلك تخصيص أجهزة الكمبيوتر. ومن المعروف أن الأشخاص ذوي الإعاقة ليسوا فقط هم المتأثرين بقضايا إمكانية الوصول. تهدف صفحات موقع عبد اللطيف جميل للتمويل مصر إلى أن تكون واضحة مع محتوى سهل المتابعة. استخدام موقع عبد اللطيف جميل للتمويل مصر تم تطوير موقع عبد اللطيف جميل للتمويل مصر ليكون متوافقًا تمامًا مع HTML 5 مع جميع العناوين والروابط ومحتوى النص الآخر المتوافق تمامًا. وهذا يسمح بقراءة جميع النصوص بواسطة قارئي النصوص وتعديل الخطوط بواسطة متصفحات متوافقة مع HTML 5. يستجيب موقع عبد اللطيف جميل للتمويل مصر للتغييرات في عامل الشكل وحجم الخط على افتراض الاستخدام المعقول.<br>يتضمن موقع عبد اللطيف جميل للتمويل مصر ما يلي:</p>
+<ul>
+<li>خريطة الموقع.</li>
+<li>تفاصيل الاتصال بشركة عبد اللطيف جميل للتمويل مصر.</li>
+<li>تفاصيل الاتصال لتقديم ملاحظات بشأن تحسين إمكانية الوصول إلى موقع عبد اللطيف جميل للتمويل مصر.<br><br></li>
+</ul>
+<h3><strong>إشراك العملاء</strong></h3>
+<p>ترحب شركة عبد اللطيف جميل للتمويل مصر بملاحظات مستخدمي موقع عبد اللطيف جميل للتمويل مصر الإلكتروني من ذوي الاحتياجات الخاصة. وستسعى شركة عبد اللطيف جميل للتمويل مصر في المستقبل إلى إشراك هؤلاء المستخدمين، حسب الاقتضاء، في تطوير واختبار الخدمات والمحتوى الجديد.</p>
+<h3><strong>الحلول البديلة</strong></h3>
+<p>قد تتمكن شركة عبد اللطيف جميل للتمويل مصر من تقديم تنسيق أو حل بديل لمشاكل إمكانية الوصول التي يواجهها مستخدمو موقع عبد اللطيف جميل للتمويل مصر الإلكتروني. يرجى الاتصال بشركة عبد اللطيف جميل للتمويل مصر باستخدام تفاصيل الاتصال الموضحة أدناه.</p>
+<p>&nbsp;</p>
+<h3><strong>الامتثال للمعايير</strong></h3>
+<p>على الرغم من أن موقع شركة عبد اللطيف جميل للتمويل مصر يطمح حاليًا إلى التوافق في جميع المجالات، على سبيل المثال، إرشادات إمكانية الوصول إلى محتوى الويب لاتحادات شبكة الويب العالمية (W3C) 1.0، المستوى AA، ويضمن الحفاظ على هذا المعيار بمجرد تحقيقه. يتم تحقيق معيار إمكانية الوصول هذا من خلال ضمان تقديم محتوى موقع عبد اللطيف جميل للتمويل مصر بوضوح وكتابته بطريقة تعتقد شركة عبد اللطيف جميل للتمويل مصر أنها سهلة الفهم والمتابعة.</p>
+<h3><strong>جهات الاتصال</strong></h3>
+<p>إذا كانت لديك أي أسئلة أو تعليقات بخصوص إمكانية الوصول إلى موقع عبد اللطيف جميل للتمويل مصر، أو إذا واجهت أي صعوبة في استخدام موقع عبد اللطيف جميل للتمويل مصر، يرجى الاتصال بشركة عبد اللطيف جميل للتمويل مصر عبر info@aljfinance.com.eg، مع تقديم تفاصيل استفسارك.</p>
+        </div>
+    </div> 
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h2 class="title-h2">سياسات المنتجات</h2>
+                <ul >
+                    <li><a href="schedule-of-charges-ar.html">جدول الرسوم</a></li>
+                    <li><a href="terms-and-condition-ar.html">شروط الاستخدام</a></li>
+                    <li><a href="#">سياسات الدفع</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2 class="title-h2">سياسات الموقع</h2>
+                <ul >
+                    <li><a href="#">حقوق الطبع والنشر وإخلاء المسؤولية</a></li>
+                    <li><a href="accessibility-policy-ar.html">سياسة إمكانية الوصول</a></li>
+                    <li><a href="cookies-policy-ar.html">سياسة ملفات تعريف الارتباط</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2 class="title-h2">السياسات والدعم</h2>
+                <ul >
+                    <li><a href="about-us-ar.html">عن الشركة</a></li>
+                    <li><a href="contact-ar.html">اتصل بنا</a></li>
+                    <li><a href="faqs-ar.html">الأسئلة الشائعة</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-3 footer-logo">
+                <img src="img/logo-footer.svg" class="logo" />
+            </div>
+        </div>
+
+        <div class="row footer-copyright">
+            <div class="col-md-5">
+                <p class="mail"><a href="tel:16158" ><img src="img/phone.svg" />  16158</a></p>
+                <p class="mail"><a href="whatsapp" ><img src="img/whatsapp.svg" /> دردش الآن </a></p>
+                <p class="mail"> <a href="mailto:info@aljfinance.com.eg"><img src="img/mail.svg" /> info@aljfinance.com.eg</a></p>
+            </div>
+            <div class="col-md-3 middel">
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="https://www.facebook.com/aljfeg/"  target="_blank"><img src="img/facebook.svg" /></a></li>
+                        <li><a href="https://www.linkedin.com/company/jameelfinance/"  target="_blank"><img src="img/youtube.svg" /></a></li>
+                        <li><a href="https://www.instagram.com/aljfeg/"  target="_blank"><img src="img/instagram.svg" /></a></li>
+                        <li><a href="https://www.linkedin.com/company/jameelfinance/"  target="_blank"><img src="img/linkedin.svg" /></a></li>
+                        <li><a href="https://www.tiktok.com/@aljfeg"><img src="img/tiktok.svg" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="download-app">
+                    <div class="first-app">
+                        <img src="img/Jameel Finance_qrcode.svg" alt="download-app" style="width:84px ;height:84px ">
+                        <p>تحميل تطبيق ايفون</p>
+                    </div>
+                    <div class="first-app">
+                        <img src="img/Jameel Finance_qrcode.svg" alt="download-app" style="width:84px ;height:84px ">
+                        <p>تحميل تطبيق اندرويد</p>
+                    </div>
+            </div>
+        </div>
+    </div>   
+        
+        <div class="row footer-down">
+            <div class="col-md-12">
+                <p>
+                    © 2024 جميل للتمويل ش.م.م. يُمنح الإذن باستخدام هذا الموقع بشرط الالتزام الصارم بشروط الاستخدام.
+اسم جميل للتمويل وشعار جميل للتمويل والرسومات ذات الشكل الخماسي هي علامات تجارية أو مسجلة
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+<script src="js/wow.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script>
+$(document).ready(function() {
+    $('.owl-about').owlCarousel({
+        margin: 0,
+        loop: true,
+        nav: false,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true,
+        rtl:true,
+        responsive:{
+        0:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:4,
+            nav:true
+        },
+        1000:{
+            items:4,
+            nav:true,
+            loop:true
+        }
+    }
+    });
+
+     $('.owl-slider').owlCarousel({
+        margin:0,
+        loop: true,
+        nav: false,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        responsive:{
+        0:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:5,
+            nav:true
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:true
+        }
+    }
+    });
+
+    $('.owl-services').owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:true
+        },
+        1000:{
+            items:2,
+            nav:true,
+            loop:true
+        }
+    }
+    });
+
+    $('.owl-banks').owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        responsive:{
+        0:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:5,
+            nav:true
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:true
+        }
+    }
+    });
+
+    new WOW().init();
+});
+    
+document.addEventListener("DOMContentLoaded", function(){
+            
+    
+            /////// Prevent closing from click inside dropdown
+        document.querySelectorAll('.dropdown-menu').forEach(function(element){
+            element.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+        })
+            if (window.innerWidth < 992) {
+    
+                // close all inner dropdowns when parent is closed
+                document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+                    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+                        // after dropdown is hidden, then find all submenus
+                          this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+                              // hide every submenu as well
+                              everysubmenu.style.display = 'none';
+                          });
+                    })
+                });
+                
+                document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+                    element.addEventListener('click', function (e) {
+            
+                          let nextEl = this.nextElementSibling;
+                          if(nextEl && nextEl.classList.contains('submenu')) {	
+                              // prevent opening link if link needs to open dropdown
+                              e.preventDefault();
+                              console.log(nextEl);
+                              if(nextEl.style.display == 'block'){
+                                  nextEl.style.display = 'none';
+                              } else {
+                                  nextEl.style.display = 'block';
+                              }
+    
+                          }
+                    });
+                })
+            }
+}); 
+function openNav() {
+  document.getElementById("mySidenav").style.height = "160px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.height = "0";
+}
+</script>
+   
+
+</html>

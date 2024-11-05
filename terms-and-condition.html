@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>News - Jameel</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible"  content="IE=edge">
+        <meta name="viewport"               content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi, viewport-fit=cover" />
+        <meta name="description"            content="application for aljfinance.com ">
+        <meta name="author"                 content="Eng: Reem Shwky , eng.reem.shwky@gmail.com">
+        <link rel="apple-touch-icon" sizes="180x180"     href="img/ico/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32"  href="img/ico/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16"  href="img/ico/favicon-16x16.png">
+        <link href="css/animate.css" 	    rel="stylesheet" />
+        <link href="css/bootstrap.css" 	    rel="stylesheet" />
+        <link href="css/owl.carousel.css" 	rel="stylesheet" />
+        <link href="css/demo-en.css" 	    rel="stylesheet" />
+        <script src="js/jquery.js"></script>
+    </head>
+<body>
+    <header class="main-header bg-header">
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-6" style="width: 400px;">
+                        <div class="search">
+                            <input placeholder="What are you looking for?"  type="text" value="" size="30" maxlength="128" class="txt-search wow slideInRight" data-wow-duration="2s" data-wow-offset="0" />
+                            <input type="submit" class="form-submit wow slideInLeft" value="" data-wow-duration="2s" data-wow-offset="0" />  
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <nav class="container navbar navbar-expand-lg navbar-light">
+            <div class="">
+                <a class="navbar-brand" href="index.html"><img src="img/logo.svg" class="logo" /></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                      <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link lang" href="index-ar.html"> <img src="img/language.svg" /> Ar </a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link lang" onclick="openNav()"> <img src="img/search.svg" style="width: 20px !important; margin-right: 0px;" /></a>
+                        </li>
+                    </ul>
+    
+                    <!-- SEARCH -->
+                    
+                     <!-- END SEARCH -->
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item dropdown" id="myDropdown">
+                            <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  Financing Products </a>
+                            <ul class="dropdown-menu">
+                              <li> <a class="dropdown-item" href="works.html"> Cars  </a>
+                                <ul class="submenu dropdown-menu">
+                                  <li><a class="dropdown-item" href="works-details.html">New</a></li>
+                                  <li><a class="dropdown-item" href="works-details-2.html">Used</a></li>
+                                  <li><a class="dropdown-item" href="works-details-3.html">Luxury</a></li>
+                                  <li><a class="dropdown-item" href="works-details-4.html">Electric</a></li>
+                                  <li><a class="dropdown-item" href="works-details-5.html">Old Models</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#"> Motorcycles </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="works-details-6.html">Motorbikes</a></li>
+                                    <li><a class="dropdown-item" href="works-details-7.html">Scooters</a></li>
+                                    <li><a class="dropdown-item" href="works-details-8.html">Electric</a></li>
+                                    <li><a class="dropdown-item" href="works-details-9.html">Golf Cars</a></li>
+                                    <li><a class="dropdown-item" href="works-details-10.html">Beach Buggies</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#"> Watercrafts </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="works-details-11.html">Boats</a></li>
+                                    <li><a class="dropdown-item" href="works-details-12.html">Jet Skies</a></li>
+                                </ul>
+                              </li>
+                              <li><a class="dropdown-item" href="#"> Maintenance, Spare Parts & Accessories </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="works-details-13.html">Cars</a></li>
+                                    <li><a class="dropdown-item" href="works-details-14.html">Motorcycles</a></li>
+                                    <li><a class="dropdown-item" href="works-details-15.html">Watercrafts</a></li>
+                                </ul>
+                              </li>
+    
+                              <li><a class="dropdown-item" href="#">Insurance </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Cars</a></li>
+                                    <li><a class="dropdown-item" href="#">Motorbikes</a></li>
+                                    <li><a class="dropdown-item" href="#">Scooters</a></li>
+                                    <li><a class="dropdown-item" href="#">Boats</a></li>
+                                </ul>
+                              </li>
+    
+                              <li><a class="dropdown-item" href="#">Appliances & Electronics </a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Mobiles & Tablets</a></li>
+                                    <li><a class="dropdown-item" href="#">PCs & Laptops</a></li>
+                                    <li><a class="dropdown-item" href="#">Appliances</a></li>
+                                    <li><a class="dropdown-item" href="#">Gadgets & Gaming</a></li>
+                                </ul>
+                              </li>
+    
+                              <li><a class="dropdown-item" href="#">Furniture</a>
+                                <ul class="submenu dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Indoor</a></li>
+                                    <li><a class="dropdown-item" href="#">Outdoor</a></li>
+                                </ul>
+                              </li>
+                              
+                            </ul>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="offers.html">Offers</a>
+                        </li>
+    
+                        <li class="nav-item">
+                          <a class="nav-link" href="about-us.html">About Us</a>
+                        </li>
+                        
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                      
+                </div>
+            </div>
+        </nav>
+    </header>
+
+<section class="container about-1 wow fadeInUp" data-wow-delay=".5s">
+    <br />
+    <br />
+    <br />
+    <br />
+    <section>
+        <div class="container">
+            <ul class="breadcrumb">
+                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                <li class="breadcrumb-item active" aria-current="page">Terms & Condition</li>
+            </ul>
+        </div>
+    </section>
+</section>
+
+
+<section class="container wow fadeInUp news-first" data-wow-delay=".5s">
+    <div class="row justify-content-center">
+        <div class="col-md-12 setting">
+        <div>
+                    <strong>Terms of Use</strong></span></span></h1>
+
+                    <p><span ><span><strong>Terms of Use</strong></span></span></p>
+                    
+                    <p><span ><span>PLEASE READ THESE TERMS OF USE CAREFULLY BEFORE USING THIS WEBSITE. ACCESS TO AND USE OF THIS WEBSITE IS GOVERNED STRICTLY BY THESE TERMS OF USE. IF YOU DO NOT AGREE WITH ANY OF THESE TERMS YOU MUST IMMEDIATELY DISCONTINUE USE OF THIS WEBSITE. PLEASE NOTE IN PARTICULAR THE LIMITATION OF LIABILITY AND EXCLUSION OF WARRANTIES CLAUSES SET OUT BELOW.</span></span></p>
+                    
+                    <p><br>
+                    <span ><span><strong>Terms of Website Use</strong></span></span></p>
+                    
+                    <p><span ><span>This website provides information about the company Abdul Latif Jameel United Finance Company and its services.</span></span></p>
+                    
+                    <p><span ><span>This webpage (together with the documents referred to in it) informs you of the Terms of Use on which you may make use of the Abdul Latif Jameel United Finance Company’s website at the domain, ALJFinance.com (the “Abdul Latif Jameel United Finance Website”). Use of the Abdul Latif Jameel United Finance Website includes accessing, browsing, linking to or registering to use the Abdul Latif Jameel United Finance Website.</span></span></p>
+                    
+                    <p><span ><span>The Abdul Latif Jameel United Finance Website is a website owned and operated by Abdul Latif Jameel United Finance Company, a closed joint-stock company under license by the Saudi Arabian Monetary Agency (SAMA) with Commercial Registration No. 4030206631 in Saudi Arabia whose principal address is PO Box 54609, Jeddah 21524. (“Company”).</span></span></p>
+                    
+                    <p><span ><span>The Company has sole responsibility for the content included on the Abdul Latif Jameel United Finance Website.</span></span></p>
+                    
+                    <p><span ><span>Please read these terms of use very carefully before you start to use the Abdul Latif Jameel United Finance Website, as these terms of use will apply to your use of and access to the Abdul Latif Jameel United Finance Website. It is recommended you print a copy of these terms of use for future reference.</span></span></p>
+                    
+                    <p><span ><span>Each time you use the Abdul Latif Jameel United Finance Website, you confirm you accept these terms of use and you agree to comply fully with them. If you do not agree to these terms of use, you must not use or access the Abdul Latif Jameel United Finance Website and must leave the Abdul Latif Jameel United Finance Website immediately.</span></span></p>
+                    
+                    <p><span ><span>These terms of use may be revised by us at any time by amending this page. Please check this webpage from time to time to note any changes made as they are binding on you as soon as you access the Abdul Latif Jameel United Finance Website.</span></span></p>
+                    
+                    <p><span ><span><strong>Information about Abdul Latif Jameel United Finance Company</strong></span></span></p>
+                    
+                    <p><span ><span>For any enquiries related to any particular entity mentioned on the Abdul Latif Jameel United Finance Website or for any specific enquiries related to Abdul Latif Jameel United Finance Company’s interests in vehicle financing, please email aljufcrm@aljfs.com.</span></span></p>
+                    
+                    <p><span ><strong><span>Other Applicable Terms</span></strong></span></p>
+                    
+                    <p><span ><span>These terms of use refer to the following additional terms, which also apply to your use of the Abdul Latif Jameel United Finance Website and which, by using the Abdul Latif Jameel United Finance Website, you agree to comply with:</span></span></p>
+                    
+                    <p><br>
+                    <span ><span>Privacy Policy (hyperlink), which sets out the terms on which any personal data collected (if any) from you, or which you provide, via the Abdul Latif Jameel United Finance Website is processed.<br>
+                    Accessibility Policy (hyperlink), which sets out the availability of the Abdul Latif Jameel United Finance Website to users with special needs.<br>
+                    Cookie Policy (hyperlink), which sets out information about the use of cookies on the Abdul Latif Jameel United Finance Website.</span></span></p>
+                    
+                    <p><br>
+                    <span ><span><strong>Accessing and Using the Abdul Latif Jameel United Finance Website</strong></span></span></p>
+                    
+                    <p><span ><span>It is not guaranteed that the Abdul Latif Jameel United Finance Website, or any content on it, will always be available or be uninterrupted. Access to the Abdul Latif Jameel United Finance Website is permitted on a temporary “as is” basis. All or any part of the Abdul Latif Jameel United Finance Website, without notice, may be suspended, withdrawn, discontinued or changed. Abdul Latif Jameel United Finance Company will not be liable to you if for any reason the Abdul Latif Jameel United Finance Website is unavailable (temporarily or permanently) at any time or for any period.</span></span></p>
+                    
+                    <p><span ><span>You are responsible for making all arrangements necessary for you to have access to the Abdul Latif Jameel United Finance Website. You are also responsible for ensuring that all persons who access the Abdul Latif Jameel United Finance Website through your Internet connection are made fully aware of these terms of use and other applicable terms and conditions, and that they comply fully with them.</span></span></p>
+                    
+                    <p><span ><span>You may use the Abdul Latif Jameel United Finance Website only for lawful purposes. You acknowledge and agree you may not use the Abdul Latif Jameel United Finance Website:</span></span></p>
+                    
+                    <p><span ><span>In any way that breaches any applicable local, national or international law or regulation.<br>
+                    In any way that is unlawful or fraudulent, or has any unlawful or fraudulent purpose or effect.<br>
+                    For the purpose of harming or attempting to harm minors in any way.<br>
+                    To send, knowingly receive, upload, download, use or re-use any material which does not comply with the Content Standards (see below).</span><br>
+                    <strong><span>To post advertisements or to promote third party websites.</span></strong><br>
+                    <span>To transmit, or procure the sending of, any unsolicited or unauthorised advertising or promotional material or any other form of similar solicitation (spam).<br>
+                    To transmit any data, send or upload any material that contains viruses, Trojan horses, worms, time-bombs, keystroke loggers, spyware, adware or any other harmful programs or similar computer code designed to adversely affect the operation of any computer software or hardware.<br>
+                    You also acknowledge and agree:</span></span></p>
+                    
+                    <p><span ><span>Not to reproduce, duplicate, copy or re-sell any part of the Abdul Latif Jameel United Finance Website in contravention of the provisions of these terms of website use.<br>
+                    Not to direct web traffic away from the Abdul Latif Jameel United Finance Website.<br>
+                    Not to access without authority, interfere with, damage or disrupt:<br>
+                    any part of the Abdul Latif Jameel United Finance Website;<br>
+                    any equipment (including any server) or network on which the Abdul Latif Jameel United Finance Website is stored;<br>
+                    any software used in the provision of the Abdul Latif Jameel United Finance Website;<br>
+                    any server, computer or database connected to the Abdul Latif Jameel United Finance Website; or<br>
+                    any equipment or network or software owned or used by any third party.<br>
+                    Not to misuse the Abdul Latif Jameel United Finance Website by knowingly introducing viruses, Trojans, worms, logic bombs or other material which is malicious or technologically harmful.<br>
+                    Not to attack the Abdul Latif Jameel United Finance Website via a denial-of-service attack or a distributed denial-of service attack. By breaching this provision, you would commit a criminal offence, e.g. the Anti-Cybercrime Act of Saudi Arabia 2007 and under the Computer Misuse Act 1990. Abdul Latif Jameel United Finance Company may report any such breach to the relevant law enforcement authorities and will co-operate with those authorities by disclosing your identity to them. In the event of such a breach, your right to use the Abdul Latif Jameel United Finance Website may be ceased immediately.<br>
+                    Not to disguise or interfere in any way with the IP address of the computer you are using to access the Abdul Latif Jameel United Finance Website or otherwise take steps to prevent the identification of the actual IP address of the computer you are using whilst accessing the Abdul Latif Jameel United Finance Website.</span></span></p>
+                    
+                    <p><span ><span>Abdul Latif Jameel United Finance Company does not guarantee that the Abdul Latif Jameel United Finance Website will be secure or free from bugs, viruses or other technologically harmful material. You are responsible for configuring your information technology, computer programmes, software and platform in order to access the Abdul Latif Jameel United Finance Website in a manner you deem appropriate and secure. You should use your own virus protection software.</span></span></p>
+                    
+                    <p><span ><strong><span>Security</span></strong></span></p>
+                    
+                    <p><span ><span>Internet transmissions are never completely private or secure and there is a risk, therefore, that any message or information sent via the Abdul Latif Jameel United Finance Website should be treated as non-confidential and may be intercepted and potentially read by others. Abdul Latif Jameel United Finance Company will have no liability to you in respect of any transmissions you send to it and you do so entirely at your own risk.</span></span></p>
+                    
+                    <p><span ><strong><span>Intellectual Property Rights and Using the Content of the Abdul Latif Jameel United Finance Website</span></strong></span></p>
+                    
+                    <p><span ><span>The Company is the owner or the licensee of the Abdul Latif Jameel United Finance Website, all content of the Abdul Latif Jameel United Finance Website, all the material published on the Abdul Latif Jameel United Finance Website, any Abdul Latif Jameel United Finance Company newsletter, updates, eshots and emails and any Abdul Latif Jameel United Finance Company social media or informational updates and/or postings (“Content”), and all intellectual property rights in the Content. The Content is protected by copyright laws and treaties around the world. All such rights are fully reserved by the Company.</span></span></p>
+                    
+                    <p><span ><span>Abdul Latif Jameel businesses own rights throughout the world in various trade marks (registered and unregistered), service marks, graphics, logos, designs, page headers, button icons, scripts and service names (“ALJ Trade Marks”)</span></span></p>
+                    
+                    <p><span ><span>Any unauthorised use of any of the ALJ Trade Marks will constitute a violation of the Abdul Latif Jameel businesses' rights in the ALJ Trade Marks.</span></span></p>
+                    
+                    <p><span ><span>Your use of the Abdul Latif Jameel United Finance Website grants you no right or licence to reproduce or otherwise use any ALJ Trade Marks or third party trademarks. Any copying or downloading of any Content will not transfer title to that Content to you nor grant you any licence to use that Content for non-personal purposes. You must not use any part of the Content for non-personal purposes, such as commercial purposes, without obtaining a prior written licence to do so from the Company, which will be granted in the Company’s absolute discretion.</span></span></p>
+                    
+                    <p><span ><span>You must not exploit the whole or part of any Content without the Company’s prior written permission (to be determined in its absolute discretion) including (but not limited to):</span></span></p>
+                    
+                    <p><span ><span>you must not modify copies of any Content you have printed off or downloaded in any way;<br>
+                    you must not use any illustrations, photographs, video or audio sequences or any graphics separately from any accompanying text;<br>
+                    you must not remove any copyright or other proprietary notices from copied or downloaded Content;<br>
+                    you must not use the Content in any way which is fraudulent or unlawful;<br>
+                    you must not rely on the Content as being entirely accurate, complete or up to date; and/or<br>
+                    you must not use the Content in a manner which does not comply fully with these terms of use.</span></span></p>
+                    
+                    <p><span ><span>If you print off, copy, download, modify or link any part of the Content available via the Abdul Latif Jameel United Finance Website in breach of these terms of use, your right to use the Abdul Latif Jameel United Finance Website may be ceased immediately and you must, at the Company’s option, return or destroy any copies (electronic or otherwise) of the materials you have made.</span></span></p>
+                    
+                    <p><span ><strong><span>Links</span></strong></span></p>
+                    
+                    <p><span ><span>Where the Abdul Latif Jameel United Finance Website contains links to other sites and resources provided by third parties, these links are provided for your information only. The Company has, unless explicitly indicated otherwise, no control over the content of those sites or resources and has no rights in the content of those sites or in the resources. The Company assumes no responsibility for the content of websites linked on the Abdul Latif Jameel United Finance Website. Such links should not be interpreted as endorsement by Abdul Latif Jameel United Finance Company of those linked websites.</span></span></p>
+                    
+                    <p><span ><span>You must not link to the Abdul Latif Jameel United Finance Website home page without the Company’s prior written permission to be determined in its absolute discretion. The Abdul Latif Jameel United Finance Website must not be framed on any other site.</span></span></p>
+                    
+                    <p><span ><span>In the event you are granted prior written permission to link to the Abdul Latif Jameel United Finance Website home page, you must:</span></span></p>
+                    
+                    <p><span ><span>only link to the Abdul Latif Jameel United Finance Website home page;<br>
+                    only link in a way that is fair and legal and does not damage the Company’s and/or Abdul Latif Jameel United Finance Company's reputation nor takes advantage of that reputation;<br>
+                    not establish a link in such a way as to suggest any form of association, approval or endorsement on the part of Abdul Latif Jameel United Finance Company where none exists;<br>
+                    not establish a link to the Abdul Latif Jameel United Finance Website in any website not owned by you; and<br>
+                    ensure the website in which you are linking must comply in all respects with the Content Standards (see below).<br>
+                    The Company reserves the right to withdraw linking permission without notice.</span></span></p>
+                    
+                    <p><span ><strong><span>Interactive Services</span></strong></span></p>
+                    
+                    <p><span ><span>From time to time, informational updates and other interactive services may be provided on the Abdul Latif Jameel United Finance Website (“Interactive Services” or “Platform”). The Platform will provide information about the goods and services provided by the Company. The Platform is operated, controlled and moderated by the Abdul Latif Jameel United Finance Company Company. Abdul Latif Jameel United Finance Company does not review and approve content included within the Platform prior to such content going live. Abdul Latif Jameel United Finance Company does not actively monitor and will not censor content, except in circumstances detailed in the Content Standards (see below).</span></span></p>
+                    
+                    <p><span ><span>Where another Interactive Service is provided, clear information will be provided about the kind of service offered, if it is moderated and what form of moderation is used (including whether it is human or technical).</span></span></p>
+                    
+                    <p><span ><span>There is no obligation to oversee, monitor or moderate any Interactive Service and liability for any loss or damage arising from the use of any Interactive Service by a user in contravention of the Content Standards (see below) is expressly excluded, whether the Interactive Service is moderated or not. However, attempts will be made to assess possible risks for users (and in particular, for children) from third parties when they use any Interactive Service. Also, it will be decided in each case whether it is appropriate to use moderation of the relevant service (including what kind of moderation to use) in the light of those risks.</span></span></p>
+                    
+                    <p><span ><span>The use of any of the Interactive Services by a minor is subject to the consent of their parent or guardian. Parents are advised that it is important they communicate with their children about their safety online, as moderation is not fool-proof. Minors who are using any Interactive Service should be made aware of the potential risks to them. Please refer to the terms below which address use of the Abdul Latif Jameel United Finance Website by children.</span></span></p>
+                    
+                    <p><span ><span>concern or difficulty arise with the Interactive Service or its content.</span></span></p>
+                    
+                    <p><span ><strong><span>Content Standards</span></strong></span></p>
+                    
+                    <p><span ><span>The content standards below (“Content Standards”) apply to any and all material which you contribute to the Abdul Latif Jameel United Finance Website (“Contribution”), and to any Interactive Services associated with it. You must comply with the spirit and the letter of the Content Standards. The Content Standards apply to each part of any Contribution as well as to its whole.</span></span></p>
+                    
+                    <p><span ><strong><span>Contributions must:</span></strong></span></p>
+                    
+                    <p><span ><span>Be accurate (where they state facts).<br>
+                    Be genuinely held (where they state opinions).<br>
+                    Comply with applicable law in the England and in any country from which they are posted.</span></span></p>
+                    
+                    <p><span ><strong><span>Contributions must not:</span></strong></span></p>
+                    
+                    <p><span ><span>Contain any material which is defamatory of any person.<br>
+                    Contain any material which is obscene, offensive, hateful or inflammatory.<br>
+                    Contain profanity or other material which would upset or offend others.<br>
+                    Promote sexually explicit material.<br>
+                    Promote violence.<br>
+                    Promote discrimination based on race, sex, culture, religion, nationality, disability, sexual orientation or age.<br>
+                    Infringe any copyright, database right, trade mark or other intellectual property right of any other person.<br>
+                    Be likely to deceive any person.<br>
+                    Be made in breach of any legal duty owed to a third party, such as a contractual duty or a duty of confidence.<br>
+                    Promote any illegal activity.<br>
+                    Be threatening, abuse or invade another’s privacy, or cause annoyance, inconvenience or needless anxiety.<br>
+                    Be likely to harass, upset, embarrass, alarm or annoy any other person.<br>
+                    Be used to impersonate any person, or to misrepresent your identity or affiliation with any person.<br>
+                    Give the impression that they emanate from or are endorsed by Abdul Latif Jameel United Finance Company or any of its members, if this is not the case.<br>
+                    Advocate, promote or assist any unlawful act such as (by way of example only) copyright infringement or computer misuse.<br>
+                    Engage in spam, malware, phishing or what may constitute spamming based on the latest tricks or tactics of spammers.</span></span></p>
+                    
+                    <p><br>
+                    <span ><strong><span>Suspension and Termination</span></strong></span></p>
+                    
+                    <p><span ><span>The Company will determine, in its discretion, whether there has been a breach of these terms of use through your use of the Abdul Latif Jameel United Finance Website. When a breach of these terms of use has occurred, the Company may take such action as it deems appropriate. Failure to comply with the Content Standards constitutes a material breach of these terms of use upon which you are permitted to use the Abdul Latif Jameel United Finance Website.</span></span></p>
+                    
+                    <p><span ><span>A breach of these terms of use may result in the Company at its complete discretion, taking all or any of the following actions:</span></span></p>
+                    
+                    <p><span ><span>Immediate, temporary or permanent suspension and/or withdrawal of your right to use the Abdul Latif Jameel United Finance Website.<br>
+                    Immediate, temporary or permanent removal of any posting or material uploaded by you to the Abdul Latif Jameel United Finance Website.<br>
+                    Issue of a warning to you.<br>
+                    Legal proceedings against you for reimbursement of all costs on an indemnity basis (including, but not limited to, reasonable administrative and legal costs) resulting from the breach.<br>
+                    Further legal action against you.<br>
+                    Disclosure of such information to law enforcement authorities.</span></span></p>
+                    
+                    <p><span ><span>All liability is excluded for actions taken by the Company, and/or any Abdul Latif Jameel United Finance Company business, in response to breaches of these terms of use. The responses described in this policy are not limited, and other actions may be taken by Abdul Latif Jameel United Finance Company. To report and alleged violation of the Content Standards, please email aljufcrm@aljfs.com.</span></span></p>
+                    
+                    <p><br>
+                    <span ><strong><span>No Reliance on Information</span></strong></span></p>
+                    
+                    <p><span ><span>The Abdul Latif Jameel United Finance Website provides brief information and an overview about Abdul Latif Jameel United Finance Company. The Abdul Latif Jameel United Finance Website provides no information which can be used for investment and/or transactional decisions. The Content is provided for information only and is of a general and approximate nature and it is not intended to amount to, nor is, information or advice on which you should rely. In particular the Content does not constitute professional, financial or investment advice. Professional or specialist advice should be obtained before taking, or refraining from, any action on the basis of the Content.</span></span></p>
+                    
+                    <p><span ><span>In providing information about Abdul Latif Jameel United Finance Company, the Company is not acting, nor is it seeking to act, as a broker or dealer in respect of any securities of any companies or the information concerning such companies.</span></span></p>
+                    
+                    <p><span ><span>It is not guaranteed that the Abdul Latif Jameel United Finance Website, or any content on it, will be free from errors, inaccuracies or omissions. It is your responsibility to check any Content is accurate and/or complete.</span></span></p>
+                    
+                    <p><span ><span>The Abdul Latif Jameel United Finance Website may be updated from time to time, and may change the Content at any time. Although the Company makes reasonable efforts to update the information on the Abdul Latif Jameel United Finance Website, it makes no representations, warranties or guarantees, whether express or implied, that the Content is accurate, complete or up-to-date. Please note the Company is under no obligation to update the Content.</span></span></p>
+                    
+                    <p><span ><strong><span>Local Regulatory Restrictions</span></strong></span></p>
+                    
+                    <p><span ><span>The Abdul Latif Jameel United Finance Website is not directed at any person in any jurisdiction where (by reason of nationality, residence or otherwise) the access to or availability of the Abdul Latif Jameel United Finance Website is prohibited or which would be subject to any restriction, including registration or other requirements within such jurisdiction. The Company reserves the right to limit access to the Abdul Latif Jameel United Finance Website to any such persons. Persons who access the Abdul Latif Jameel United Finance Website do so on their own initiative and are responsible for compliance with applicable local laws and regulations. If in doubt, you should seek independent legal advice.</span></span></p>
+                    
+                    <p><span ><strong><span>Local Regulatory Restrictions</span></strong></span></p>
+                    
+                    <p><span ><span>The Abdul Latif Jameel United Finance Website is not directed at any person in any jurisdiction where (by reason of nationality, residence or otherwise) the access to or availability of the Abdul Latif Jameel United Finance Website is prohibited or which would be subject to any restriction, including registration or other requirements within such jurisdiction. The Company reserves the right to limit access to the Abdul Latif Jameel United Finance Website to any such persons. Persons who access the Abdul Latif Jameel United Finance Website do so on their own initiative and are responsible for compliance with applicable local laws and regulations. If in doubt, you should seek independent legal advice.</span></span></p>
+                    
+                    <p><br>
+                    <span ><strong><span>LIMITATION OF OUR LIABILITY</span></strong><br>
+                    <span>NOTHING IN THESE TERMS OF USE EXCLUDES OR LIMITS THE COMPANY LIABILITY FOR DEATH OR PERSONAL INJURY ARISING FROM NEGLIGENCE, OR FRAUD OR FRAUDULENT MISREPRESENTATION, OR ANY OTHER LIABILITY THAT CANNOT BE EXCLUDED OR LIMITED BY SAUDI ARABIAN LAW.</span></span></p>
+                    
+                    <p><span ><span>THE COMPANY WILL BE LIABLE TO ANY USER FOR ANY LOSS OR DAMAGE, WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE), BREACH OF STATUTORY DUTY, OR OTHERWISE, EVEN IF FORESEEABLE, ARISING UNDER OR IN CONNECTION WITH:</span></span></p>
+                    
+                    <p><span ><span>USE OF, OR INABILITY TO USE, THE Abdul Latif Jameel United Finance WEBSITE;<br>
+                    USE OF OR RELIANCE ON ANY CONTENT DISPLAYED ON, OR MATERIAL PROVIDED VIA, THE Abdul Latif Jameel United Finance WEBSITE;<br>
+                    USE OF OR RELIANCE ON ANY CONTENT DISPLAYED ON, OR MATERIAL PROVIDED VIA, WEBSITES LINKED TO THE Abdul Latif Jameel United Finance WEBSITE INCLUDING WITHOUT LIMITATION THE CONTENT;<br>
+                    LOSS OR DAMAGE CAUSED BY A VIRUS, DISTRIBUTED DENIAL-OF-SERVICE ATTACK, OR OTHER TECHNOLOGICALLY HARMFUL MATERIAL THAT MAY INFECT YOUR COMPUTER EQUIPMENT, COMPUTER PROGRAMS, DATA OR OTHER PROPRIETARY MATERIAL DUE TO YOUR USE OF THE Abdul Latif Jameel United Finance WEBSITE OR ANY WEBSITE LINKED TO IT, OR TO YOUR DOWNLOADING OF ANY CONTENT OR MATERIAL ON IT, OR ON ANY WEBSITE LINKED TO IT; OR</span></span></p>
+                    
+                    <p><span ><span>IF YOU ARE A BUSINESS USER, PLEASE NOTE THE Abdul Latif Jameel United Finance WEBSITE IS PROVIDED FOR PERSONAL USE ONLY AND IN ADDITION THE COMPANY ALSO WILL NOT BE LIABLE FOR:</span></span></p>
+                    
+                    <p><span ><span>LOSS OF PROFITS, SALES, BUSINESS, OR REVENUE;<br>
+                    BUSINESS INTERRUPTION;<br>
+                    LOSS OF DATA;<br>
+                    LOSS OF ANTICIPATED SAVINGS;<br>
+                    LOSS OF BUSINESS OPPORTUNITY, GOODWILL OR REPUTATION; OR<br>
+                    ANY INDIRECT OR CONSEQUENTIAL LOSS OR DAMAGE.</span></span></p>
+                    
+                    <p><br>
+                    <span ><strong><span>NO WARRANTIES</span></strong><br>
+                    <span>THE Abdul Latif Jameel United Finance WEBSITE IS PROVIDED "AS IS" AND NO WARRANTIES OF ANY KIND ARE GIVEN EXPRESS OR IMPLIED IN RESPECT OF THE ALJ WEBSITE, ALL CONTENT OF THE Abdul Latif Jameel United Finance WEBSITE AND IN THE MATERIAL PUBLISHED ON THE Abdul Latif Jameel United Finance WEBSITE, INCLUDING WITHOUT LIMITATION THE CONTENT. SPECIFICALLY, WITHOUT LIMITATION, THE COMPANY DOES NOT WARRANT THAT:</span></span></p>
+                    
+                    <p><span ><span>YOU WILL BE ABLE TO USE THE Abdul Latif Jameel United Finance WEBSITE OR THAT IT WILL CONTINUE TO BE MADE AVAILABLE IN ITS CURRENT OR ANY OTHER FORM;<br>
+                    THE CONTENT ON THE Abdul Latif Jameel United Finance WEBSITE OR THE MATERIAL AVAILABLE VIA THE Abdul Latif Jameel United Finance WEBSITE, INCLUDING WITHOUT LIMITATION THE CONTENT, IS ACCURATE, COMPLETE OR UP-TO-DATE; NOR<br>
+                    THE Abdul Latif Jameel United Finance WEBSITE OR ANY SOFTWARE OR MATERIAL OF WHATSOEVER NATURE AVAILABLE ON OR DOWNLOADED FROM IT WILL BE FREE FROM VIRUSES OR DEFECTS, COMPATIBLE WITH YOUR EQUIPMENT OR FIT FOR ANY PURPOSE.<br>
+                    EXCEPT AS EXPRESSLY SET OUT IN THESE TERMS OF USE, ALL WARRANTIES, CONDITIONS AND REPRESENTATIONS EXPRESSED OR IMPLIED BY STATUTE, COMMON LAW OR OTHERWISE (INCLUDING, WITHOUT LIMITATION, WARRANTIES AS TO SATISFACTORY QUALITY, FITNESS FOR PURPOSE OR SKILL AND CARE) ARE HEREBY EXCLUDED TO THE FULLEST EXTENT PERMITTED BY LAW.</span></span></p>
+                    
+                    <p><br>
+                    <span ><strong><span>INDEMNITY</span></strong></span></p>
+                    
+                    <p><span ><span>YOU AGREE TO INDEMNIFY THE COMPANY OR COMPANY'S MEMBERS, OFFICERS, DIRECTORS AND EMPLOYEES, IMMEDIATELY ON DEMAND, AGAINST ALL CLAIMS, LIABILITY, DAMAGES, COSTS AND EXPENSES, INCLUDING LEGAL FEES, ARISING OUT OF ANY BREACH OF THESE TERMS OF USE BY YOU OR ANY OTHER LIABILITIES ARISING OUT OF YOUR USE OF THE Abdul Latif Jameel United Finance WEBSITE.</span></span></p>
+                    
+                    <p><span ><strong><span>INDEMNITY</span></strong></span></p>
+                    
+                    <p><span ><span>YOU AGREE TO INDEMNIFY THE COMPANY OR COMPANY'S MEMBERS, OFFICERS, DIRECTORS AND EMPLOYEES, IMMEDIATELY ON DEMAND, AGAINST ALL CLAIMS, LIABILITY, DAMAGES, COSTS AND EXPENSES, INCLUDING LEGAL FEES, ARISING OUT OF ANY BREACH OF THESE TERMS OF USE BY YOU OR ANY OTHER LIABILITIES ARISING OUT OF YOUR USE OF THE Abdul Latif Jameel United Finance WEBSITE.</span></span></p>
+                    
+                    <p><span ><strong><span>Children aged under 18</span></strong><br>
+                    <span>If you are under 18, you must ask your parent or a guardian before you:<br>
+                    email the Abdul Latif Jameel United Finance Website or submit an enquiry<br>
+                    make a Contribution<br>
+                    ask Abdul Latif Jameel United Finance Company to email anything to you; or<br>
+                    send any information to the Abdul Latif Jameel United Finance Company.<br>
+                    By continuing to use the Abdul Latif Jameel United Finance Website and any of the services offered by it, you are confirming you have received the informed consent of your parent or a legal guardian.</span></span></p>
+                    
+                    <p><span ><strong><span>Variation</span></strong></span></p>
+                    
+                    <p><span ><span>No variation of these terms of use by you shall be effective unless it is in writing and signed by both the parties.</span></span></p>
+                    
+                    <p><br>
+                    <span ><strong><span>Severability</span></strong><br>
+                    <span>If any competent legal authority determines any part of these terms of use is illegal or unenforceable, then such part will be eliminated and the remaining terms of use will remain in force and effect and continue to apply to your use of the Abdul Latif Jameel United Finance Website.</span></span></p>
+                    
+                    <p><span ><strong><span>Applicable law</span></strong><br>
+                    <span>These terms of use, its subject matter and its formation (and any non-contractual disputes or claims) are governed by Saudi Arabian law. Abdul Latif Jameel United Finance Company and you both agree the courts of Saudi Arabia have exclusive jurisdiction of to settle any dispute, controversy or claim arising from or connected with these terms of use.</span><br>
+                    <strong><span>Contact Us</span></strong></span></p>
+                    
+                    <p><span ><span>To contact us, please email aljufcrm@aljfs.com or use the enquiry form available on Abdul Latif Jameel United Finance Website.</span></span><br>
+                    &nbsp;</p>
+    </div>
+
+</div>
+</div>
+        
+        <br/>   
+</section>
+
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <h2 class="title-h2">Products Policies</h2>
+                <ul>
+                    <li><a href="schedule-of-charges.html">Schedule of charges</a></li>
+                    <li><a href="#">Terms & Conditions</a></li>
+                    <li><a href="#">Payments Methods</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2 class="title-h2">Website Policies</h2>
+                <ul>
+                    <li><a href="copyrights-disclaimers.html">Copyrights & Disclaimers</a></li>
+                    <li><a href="#">Terms of usage</a></li>
+                    <li><a href="cookies-policy.html">Privacy , Cookies & Accessibility Policies</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h2 class="title-h2">Support & Info</h2>
+                <ul>
+                    <li><a href="about-us.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                    <li><a href="faqs.html">FAQs</a></li>
+                </ul>
+            </div>
+            
+            <div class="col-md-3 footer-logo">
+                <img src="img/logo-footer.svg" class="logo" />
+                
+            </div>
+        </div>
+
+        <div class="row footer-copyright">
+            <div class="col-md-5">
+                <p class="mail"><a href="tel:16158" ><img src="img/phone.svg" />  16158</a></p>
+                <p class="mail"><a href="whatsapp" ><img src="img/whatsapp.svg" />  Chat Now</a></p>
+                <p class="mail"> <a href="mailto:info@aljfinance.com.eg"><img src="img/mail.svg" /> info@aljfinance.com.eg</a></p>
+            </div>
+            <div class="col-md-3 middel">
+                <div class="social-icons">
+                    <ul>
+                        <li><a href="https://www.facebook.com/aljfeg/"  target="_blank"><img src="img/facebook.svg" /></a></li>
+                        <li><a href="https://www.linkedin.com/company/jameelfinance/"  target="_blank"><img src="img/youtube.svg" /></a></li>
+                        <li><a href="https://www.instagram.com/aljfeg/"  target="_blank"><img src="img/instagram.svg" /></a></li>
+                        <li><a href="https://www.linkedin.com/company/jameelfinance/"  target="_blank"><img src="img/linkedin.svg" /></a></li>
+                        <li><a href="https://www.tiktok.com/@aljfeg"><img src="img/tiktok.svg" /></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="download-app">
+                <div class="first-app">
+                    <img src="img/Jameel Finance_qrcode.svg" alt="download-app" style="width:84px ;height:84px ">
+                    <p>Download IOS</p>
+                </div>
+                <div class="first-app">
+                    <img src="img/Jameel Finance_qrcode.svg" alt="download-app" style="width:84px ;height:84px ">
+                    <p>Download ANDROID</p>
+                </div>
+            </div>
+               
+            </div>
+        </div>
+        <div class="row footer-down">
+            <div class="col-md-12">
+                <p>
+                    © 2024 Jameel Finance S.A.E. permission to use this site is granted strictly subject to the Terms of Use.
+                    The Abdul Latif Jameel name and the Abdul Latif Jameel logotype and pentagon-shaped graphics are trademarks or registered
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+<script src="js/wow.js"></script>
+<script src="js/bootstrap.bundle.js"></script>
+<script src="js/owl.carousel.js"></script>
+<script>
+$(document).ready(function() {
+    $('.owl-about').owlCarousel({
+        margin: 0,
+        loop: true,
+        nav: false,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:1000,
+        autoplayHoverPause:true,
+        rtl:true,
+        responsive:{
+        0:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:4,
+            nav:true
+        },
+        1000:{
+            items:4,
+            nav:true,
+            loop:true
+        }
+    }
+    });
+
+     $('.owl-slider').owlCarousel({
+        margin:0,
+        loop: true,
+        nav: false,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        responsive:{
+        0:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:5,
+            nav:true
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:true
+        }
+    }
+    });
+
+    $('.owl-services').owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+        600:{
+            items:1,
+            nav:true
+        },
+        1000:{
+            items:2,
+            nav:true,
+            loop:true
+        }
+    }
+    });
+
+    $('.owl-banks').owlCarousel({
+        margin: 10,
+        nav: true,
+        loop: true,
+        dots:true,
+        autoplay:true,
+        autoplayTimeout:5000,
+        autoplayHoverPause:true,
+        responsive:{
+        0:{
+            items:2,
+            nav:true
+        },
+        600:{
+            items:5,
+            nav:true
+        },
+        1000:{
+            items:5,
+            nav:true,
+            loop:true
+        }
+    }
+    });
+
+    new WOW().init();
+});
+    
+document.addEventListener("DOMContentLoaded", function(){
+            
+    
+            /////// Prevent closing from click inside dropdown
+        document.querySelectorAll('.dropdown-menu').forEach(function(element){
+            element.addEventListener('click', function (e) {
+                e.stopPropagation();
+            });
+        })
+            if (window.innerWidth < 992) {
+    
+                // close all inner dropdowns when parent is closed
+                document.querySelectorAll('.navbar .dropdown').forEach(function(everydropdown){
+                    everydropdown.addEventListener('hidden.bs.dropdown', function () {
+                        // after dropdown is hidden, then find all submenus
+                          this.querySelectorAll('.submenu').forEach(function(everysubmenu){
+                              // hide every submenu as well
+                              everysubmenu.style.display = 'none';
+                          });
+                    })
+                });
+                
+                document.querySelectorAll('.dropdown-menu a').forEach(function(element){
+                    element.addEventListener('click', function (e) {
+            
+                          let nextEl = this.nextElementSibling;
+                          if(nextEl && nextEl.classList.contains('submenu')) {	
+                              // prevent opening link if link needs to open dropdown
+                              e.preventDefault();
+                              console.log(nextEl);
+                              if(nextEl.style.display == 'block'){
+                                  nextEl.style.display = 'none';
+                              } else {
+                                  nextEl.style.display = 'block';
+                              }
+    
+                          }
+                    });
+                })
+            }
+}); 
+function openNav() {
+  document.getElementById("mySidenav").style.height = "160px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.height = "0";
+}
+</script>
+   
+
+</html>
