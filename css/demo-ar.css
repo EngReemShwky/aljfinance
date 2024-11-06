@@ -1156,6 +1156,9 @@ margin-top: -100px;
   }
 }
 
+.p-desc{
+  text-align: center;
+}
 .subscribe .email-box{
   text-align: center;
   display: block;
@@ -1229,8 +1232,8 @@ margin-top: -100px;
 }
 .privry label{
   font-size: 16px !important;
-  color: #fff !important;
-  width: 45% !important;
+  color: #510c76 !important;
+  width: 65% !important;
   text-align: start;
   font-weight: 400;
   margin-right: 26px;
@@ -1778,7 +1781,7 @@ text-wrap: wrap;
 
 .shape19 {
   position: absolute;
-  right: -15px;
+  right: 100px;
   top: 40%;
 }
 .shape19 img {
@@ -1808,13 +1811,14 @@ text-wrap: wrap;
   position: absolute;
   z-index: -1;
   left: 55%;
-  bottom: 10px;
+  bottom: 20px;
 }
 .shape22 img {
   animation-name: rotateme;
   animation-duration: 50s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
+  width: 50%;
 }
 .shape23 {
   position: absolute;
@@ -1904,7 +1908,7 @@ text-wrap: wrap;
   color: #FFF;
   display: block;
   transition: 0.3s;
-  background-color: #510c76;
+  /* background-color: #510c76;  */
   text-align: center;
   width: 30px;
   display: block;
@@ -1927,15 +1931,21 @@ text-wrap: wrap;
   width: 50px;
   border-radius: 45%;
   line-height: 43px;
+  
+}
+.sidenav .closebtn img{
   transform: rotate(0deg);
   -webkit-transform: rotate(0deg);
   transition: all 0.3s linear;
 }
-
-.sidenav .closebtn:hover {
+.sidenav .closebtn:hover img{
   transition: all 0.3s linear;
   transform: rotate(90deg);
-  -webkit-transform: rotate(90deg)
+  -webkit-transform: rotate(90deg);
+}
+
+.sidenav .closebtn:hover {
+  
 }
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
@@ -2355,15 +2365,16 @@ margin-bottom: 50px;
   border-right:10px solid #FFF;
 }
 .projects-content .item-offer figure {
-  overflow: hidden; }
+  overflow: hidden; 
+}
 .projects-content .item-offer figure img {
-      max-width: none;
-  width: -webkit-calc(100% + 60px);
-  width: calc(100% + 60px);
+  max-width: none;
+  width: -webkit-calc(100%);
+  width: calc(100%);
   -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
   transition: opacity 0.35s, transform 0.35s;
-  -webkit-transform: translate3d(50px, 0, 0);
-  transform: translate3d(50px, 0, 0); 
+  -webkit-transform: translate3d(0px, 0, 0);
+  transform: translate3d(0px, 0, 0); 
 }
 .projects-content .item-offer:hover figure img {
     -webkit-transform: translate3d(0, 0, 0);
@@ -3183,11 +3194,20 @@ overflow-y: hidden;
 .tp-faq-sidebar ul li:not(:last-of-type) {
   margin-bottom: 10px;
 }
+.text-align-left{
+  text-align: left;
+}
 
+.filter-title{
+  padding-top: 10px;
+  color: #7a12b2;
+  font-weight: bold;
+  font-size: 20px;
+}
 .filter-button
 {
   background-color: #FFF;
-  font-size: 18px;
+  font-size: 16px;
   border: 1px solid #7a12b2;
   border-radius: 5px;
   text-align: center;
@@ -3195,10 +3215,10 @@ overflow-y: hidden;
   margin-bottom: 30px;
   border-radius: 18px;
   padding-top: 10px;
+  font-weight: 500;
 }
 .filter-button:hover
 {
-    font-size: 18px;
     border: 1px solid #fe5000;
     text-align: center;
     color: #ffffff;
