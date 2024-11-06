@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>News - Jameel</title>
+        <title>الخدمات - جميل</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible"  content="IE=edge">
         <meta name="viewport"               content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi, viewport-fit=cover" />
@@ -19,7 +19,7 @@
 <body>
 <header class="main-header bg-header">
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/close-icon.svg" /></a>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-6">
@@ -52,10 +52,10 @@
                     
                      <!-- END SEARCH -->
                      <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
+                        <li class="nav-item">
                           <a class="nav-link" href="index-ar.html">الرئيسية</a>
                         </li>
-                        <li class="nav-item dropdown" id="myDropdown">
+                        <li class="nav-item dropdown active" id="myDropdown">
                             <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">  المنتجات التمويلية  </a>
                             <ul class="dropdown-menu">
                               <li> <a class="dropdown-item" href="#">  السيارات  </a>
@@ -138,7 +138,9 @@
 
 <section class="works">
     <div class="container wow fadeInUp" data-wow-delay=".5s">
-        <div class="col-md-12" align="center">
+    <div class="row">
+            <div class="col-md-1"><h3 class="filter-title">عرض</h3></div>
+            <div class="col-md-11 text-align-left">
             <button class="btn btn-default filter-button active" data-filter="all">الكل</button>
             <button class="btn btn-default filter-button" data-filter="cars">السيارات</button>
             <button class="btn btn-default filter-button" data-filter="motorcycles">الدراجات النارية</button>
@@ -148,6 +150,7 @@
             <button class="btn btn-default filter-button" data-filter="appliances">الأجهزة والإلكترونيات</button>
             <button class="btn btn-default filter-button" data-filter="furniture">الاثاث</button>
         </div>
+    </div>
 
             <div class="row">
 
@@ -537,7 +540,7 @@
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script>
-    $(document).ready(function(){
+$(document).ready(function(){
 
 $(".filter-button").click(function(){
     if ($(".filter-button").removeClass("active")) {
@@ -547,23 +550,15 @@ $(".filter-button").click(function(){
     
     if(value == "all")
     {
-        //$('.filter').removeClass('hidden');
         $('.filter').show('1000');
     }
     else
     {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
         $(".filter").not('.'+value).hide('3000');
         $('.filter').filter('.'+value).show('3000');
-        
     }
     $(this).addClass("active");
 });
-
-if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
 
 
 });

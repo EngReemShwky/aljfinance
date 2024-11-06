@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Works - Jameel</title>
+    <title>Services - Jameel</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible"  content="IE=edge">
     <meta name="viewport"               content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi, viewport-fit=cover" />
@@ -19,7 +19,7 @@
 <body>
     <header class="main-header bg-header">
         <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="img/close-icon.svg" /></a>
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-md-6" style="width: 400px;">
@@ -143,15 +143,18 @@
 
 <section class="works">
     <div class="container wow fadeInUp" data-wow-delay=".5s">
-        <div class="col-md-12" align="center">
-            <button class="btn btn-default filter-button active" data-filter="all">ALL</button>
-            <button class="btn btn-default filter-button" data-filter="cars">Cars</button>
-            <button class="btn btn-default filter-button" data-filter="motorcycles">Motorcycles</button>
-            <button class="btn btn-default filter-button" data-filter="watercrafts">Watercrafts</button>
-            <button class="btn btn-default filter-button" data-filter="maintenance">Maintenance, Spare Parts & Accessories</button>
-            <button class="btn btn-default filter-button" data-filter="insurance">Insurance</button>
-            <button class="btn btn-default filter-button" data-filter="appliances">Appliances & Electronics</button>
-            <button class="btn btn-default filter-button" data-filter="furniture">Furniture</button>
+        <div class="row">
+        <div class="col-md-1"><h3 class="filter-title">SHOW</h3></div>
+        <div class="col-md-11 text-align-right">
+                <button class="btn btn-default filter-button active" data-filter="all">ALL</button>
+                <button class="btn btn-default filter-button" data-filter="cars">Cars</button>
+                <button class="btn btn-default filter-button" data-filter="motorcycles">Motorcycles</button>
+                <button class="btn btn-default filter-button" data-filter="watercrafts">Watercrafts</button>
+                <button class="btn btn-default filter-button" data-filter="maintenance">Maintenance, Spare Parts & Accessories</button>
+                <button class="btn btn-default filter-button" data-filter="insurance">Insurance</button>
+                <button class="btn btn-default filter-button" data-filter="appliances">Appliances & Electronics</button>
+                <button class="btn btn-default filter-button" data-filter="furniture">Furniture</button>
+            </div>
         </div>
             <div class="row">
 
@@ -553,7 +556,7 @@
 <script src="js/bootstrap.bundle.js"></script>
 <script src="js/owl.carousel.js"></script>
 <script>
-    $(document).ready(function(){
+$(document).ready(function(){
 
 $(".filter-button").click(function(){
     if ($(".filter-button").removeClass("active")) {
@@ -564,16 +567,12 @@ $(".filter-button").click(function(){
     
     if(value == "all")
     {
-        //$('.filter').removeClass('hidden');
         $('.filter').show('1000');
     }
     else
     {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
         $(".filter").not('.'+value).hide('3000');
         $('.filter').filter('.'+value).show('3000');
-        
     }
 
     $(this).addClass("active");
